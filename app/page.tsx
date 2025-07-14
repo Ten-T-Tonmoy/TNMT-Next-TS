@@ -1,6 +1,35 @@
-"use client";
+import React from "react";
+import { GridBackgroundDemo } from "./home/Grid";
+import { BackgroundBeamsWithCollision } from "../components/ui/TopDropHero";
 
+//pages
+import Homepage from "./home/page";
+import About from "./about/About";
 
-export default function Home() {
-  return <></>;
-}
+const page = () => {
+  return (
+    <div className="h-[100vh] w-[100vw] ">
+      <BackgroundBeamsWithCollision>
+        <GridBackgroundDemo />
+        <div className=" w-[100vw] h-[100vh] overflow-y-scroll">
+          <Homepage />
+          <About />
+        </div>
+      </BackgroundBeamsWithCollision>
+    </div>
+  );
+};
+
+export default page;
+
+//incase i need a redo
+
+const BGpage = () => {
+  return (
+    <div className="">
+      <BackgroundBeamsWithCollision>
+        <GridBackgroundDemo />
+      </BackgroundBeamsWithCollision>
+    </div>
+  );
+};

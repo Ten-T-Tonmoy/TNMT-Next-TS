@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Ubuntu } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { FollowerPointerCard } from "../components/ui/Pointer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable}
+        className={`${geistSans.variable} overflow-hidden
         ${ubuntu.variable} ${poppins.variable}
         ${geistMono.variable}  antialiased`}
       >
@@ -50,7 +51,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <FollowerPointerCard>{children}</FollowerPointerCard>
         </ThemeProvider>
       </body>
     </html>

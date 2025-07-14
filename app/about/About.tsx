@@ -1,0 +1,26 @@
+import React from "react";
+import CodeBlock from "./CodeCard";
+
+const About = () => {
+  return (
+    <div className="min-h-[100vh] flex flex-col md:flex-row justify-center items-center  ">
+      <CodeBlock />
+      <Myself />
+    </div>
+  );
+};
+
+export default About;
+
+//dayum sometime min-h more important
+
+const Myself = () => {
+  return (
+    <div
+      className="min-h-[100vh] flex items-center justify-center
+  p-2 w-[92vw] md:w-[48vw]"
+    >
+        
+    </div>
+  );
+};
