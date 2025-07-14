@@ -26,6 +26,12 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: "var(--font-geist-sans)",
+        mono: "var(--font-geist-mono)",
+        poppins: "var(--font-poppins)",
+        ubuntu: "var(--font-ubuntu)",
+      },
       colors: {
         black: {
           DEFAULT: "#000",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
+import { Spotlight } from "./Spotlight";
 
 //spotlight + box dots? maybe yea hell
 
@@ -44,6 +44,16 @@ const Hero = () => {
           dark:bg-black bg-white 
           [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         ></div>
+      </div>
+      <div className="flex justify-center">
+        <div className="max-w-[89vw]">
+          <p
+            className="text-blue-100 max-w-80 text-center
+          uppercase text-xs relative  tracking-widest "
+          >
+            might be some shii subtext here
+          </p>
+        </div>
       </div>
     </div>
   );
