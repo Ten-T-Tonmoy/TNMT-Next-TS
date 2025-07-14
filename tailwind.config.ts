@@ -26,13 +26,11 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: "var(--font-geist-sans)",
-        mono: "var(--font-geist-mono)",
-        poppins: "var(--font-poppins)",
-        ubuntu: "var(--font-ubuntu)",
-      },
       colors: {
+        pr1: "#5409DA",
+        pr2: "#4E71FF",
+        sec1: "#8DD8FF",
+        sec2: "#BBFBFF",
         black: {
           DEFAULT: "#000",
           100: "#000319",
@@ -197,8 +195,8 @@ const config = {
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
 

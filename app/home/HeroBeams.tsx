@@ -1,5 +1,5 @@
 import React from "react";
-import { Spotlight } from "./Spotlight";
+import { Spotlight } from "../../components/ui/Spotlight";
 
 //spotlight + box dots? maybe yea hell
 

@@ -64,14 +64,53 @@ export const BackgroundBeamsWithCollision = ({
       delay: 2,
       className: "h-6",
     },
+    {
+      initialX: 1400,
+      translateX: 1400,
+      duration: 6,
+      repeatDelay: 3,
+      delay: 1,
+      className: "h-10",
+    },
+    {
+      initialX: 1600,
+      translateX: 1600,
+      duration: 4,
+      repeatDelay: 5,
+      className: "h-8",
+    },
+    {
+      initialX: 1800,
+      translateX: 1800,
+      duration: 7,
+      repeatDelay: 4,
+      delay: 2,
+      className: "h-16",
+    },
+    {
+      initialX: 2000,
+      translateX: 2000,
+      duration: 5,
+      repeatDelay: 6,
+      delay: 3,
+      className: "h-6",
+    },
+    {
+      initialX: 2200,
+      translateX: 2200,
+      duration: 8,
+      repeatDelay: 3,
+      className: "h-14",
+    },
   ];
 
   return (
     <div
       ref={parentRef}
       className={cn(
-        "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
-        // h-screen if you want bigger
+        `h-[100vh] md:h-[40rem] bg-gradient-to-b from-pr1  to-sec2 relative flex items-center 
+         w-full justify-center overflow-hidden`,
+        // h-screen  height
         className
       )}
     >
@@ -200,7 +239,7 @@ const CollisionMechanism = React.forwardRef<
           repeatDelay: beamOptions.repeatDelay || 0,
         }}
         className={cn(
-          "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-indigo-500 via-purple-500 to-transparent",
+          "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-pr2 via-sec1 to-transparent",
           beamOptions.className
         )}
       />
@@ -251,7 +290,7 @@ const Explosion = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
             opacity: 0,
           }}
           transition={{ duration: Math.random() * 1.5 + 0.5, ease: "easeOut" }}
-          className="absolute h-1 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500"
+          className="absolute h-1 w-1 rounded-full bg-gradient-to-b from-pr2 to-sec2"
         />
       ))}
     </div>
