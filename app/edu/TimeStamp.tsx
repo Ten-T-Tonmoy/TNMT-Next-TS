@@ -7,6 +7,7 @@ import { FaSchool } from "react-icons/fa6";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { LuRadioTower } from "react-icons/lu";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { HiBeaker } from "react-icons/hi2";
 
 export function TimeStamp() {
   const data = [
@@ -43,9 +44,9 @@ export function TimeStamp() {
             </p>
           </p>
           <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
-            <FaMapLocationDot className="text-[1.8rem]" />
+            <HiBeaker className="text-[1.8rem]" />
             <p>
-              <strong> Board :</strong> Dhaka Board
+              <strong> Stream :</strong> Science
             </p>
           </p>
           <p className="mb-4 text-md font-normal gap-4 text-white items-start justify-start  flex  ">
@@ -88,9 +89,9 @@ export function TimeStamp() {
             </p>
           </p>
           <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
-            <FaMapLocationDot className="text-[1.8rem]" />
+            <HiBeaker className="text-[1.8rem]" />
             <p>
-              <strong> Board :</strong> Dhaka Board
+              <strong> Stream :</strong> Science
             </p>
           </p>
           <p className="mb-4 text-md font-normal gap-4 text-white items-start justify-start  flex  ">
@@ -133,7 +134,7 @@ export function TimeStamp() {
             </p>
           </p>
           <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
-            <LuRadioTower className="text-[1.8rem]" />
+            <LuRadioTower className="text-[2.5rem] sm:text-[2rem]" />
             <p>
               <strong> Major :</strong> Information and Communication
               Engineering{" "}

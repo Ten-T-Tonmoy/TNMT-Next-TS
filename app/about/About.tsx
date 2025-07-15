@@ -1,10 +1,14 @@
 "use client";
 import React from "react";
 import CodeBlock from "./CodeCard";
+import { MeteorsCard } from "./MeteorCard";
 
 const About = () => {
   return (
-    <div className="min-h-[100vh] flex flex-col md:flex-row justify-center items-center  ">
+    <div
+      className="min-h-[100vh] flex flex-col md:flex-row 
+    bg-neutral-950 justify-center items-center  "
+    >
       <CodeBlock />
       <Myself />
     </div>
@@ -20,7 +24,9 @@ const Myself = () => {
   return (
     <div
       className="min-h-[100vh] flex items-center justify-center
-  p-2 w-[92vw] md:w-[48vw]"
-    ></div>
+    p-2 w-[92vw] md:w-[48vw]"
+    >
+      <MeteorsCard />
+    </div>
   );
 };

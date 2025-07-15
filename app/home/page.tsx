@@ -1,4 +1,6 @@
+import { BioRhyme } from "next/font/google";
 import React from "react";
+import { BiSolidSend } from "react-icons/bi";
 
 const Homepage = () => {
   return (
@@ -81,9 +83,9 @@ export const Hero = () => {
         <button
           className="px-4 z-[0] py-2 font-semibold cursor-none bg-white border-2 border-pr2  rounded-xl 
             transition-all duration-300 ease-in-out text-pr1 hover:text-white
-             hover:bg-gradient-to-r "
+             hover:bg-gradient-to-r active:scale-95 flex justify-center items-center gap-2"
         >
-          Lit up Box
+          Explore <BiSolidSend className="scale-125 mt-1" />
         </button>
       </div>
     </div>
