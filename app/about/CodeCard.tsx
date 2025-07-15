@@ -20,7 +20,7 @@ const CodeBlock = () => {
     <div className="h-[100vh]  flex items-center justify-center p-2 w-[92vw] md:w-[48vw]">
       <div className="">
         {/* header */}
-        <div className="bg-gray-800 rounded-t-lg p-3 flex items-center space-x-2">
+        <div className="bg-gray-800 relative rounded-t-lg p-3 flex items-center space-x-2">
           <div className="w-3 h-3 bg-red-500 rounded-full"></div>
           <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
           <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -29,13 +29,26 @@ const CodeBlock = () => {
               programmer.js
             </span>
           </div>
+          {/**top color a bit  */}
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         top-[0px] bg-gradient-to-r from-transparent via-red-600
+         to-transparent h-[2px]"
+          />
         </div>
         <div
           className="bg-gradient-to-br from-slate-800 via-slate-900
          to-gray-900 rounded-b-lg p-6 font-mono text-sm shadow-2xl border-2 
-         border-transparent bg-clip-padding relative"
+         border-transparent bg-clip-padding relative "
         >
+          {/**top color a bit  */}
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         top-[0px] bg-gradient-to-r from-transparent via-pink-600
+         to-transparent h-[2px]"
+          />
           {/* code mimic */}
+
           <div
             className="absolute inset-0 rounded-b-lg bg-gradient-to-r
            from-blue-500 via-purple-500 to-pink-500 opacity-50 -z-10"

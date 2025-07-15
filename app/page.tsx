@@ -5,10 +5,12 @@ import { BackgroundBeamsWithCollision } from "../components/ui/TopDropHero";
 //pages
 import Homepage from "./home/page";
 import About from "./about/About";
+import NavbarTop from "./Misc/Navbar";
 
 const page = () => {
   return (
     <div className="h-[100vh] w-[100vw] ">
+      <NavbarTop />
       <BackgroundBeamsWithCollision>
         <GridBackgroundDemo />
         <div className=" w-[100vw] h-[100vh] overflow-y-scroll">
