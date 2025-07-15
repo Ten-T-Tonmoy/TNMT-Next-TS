@@ -1,7 +1,3 @@
-// @ts-except-ignore
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
-
 const CodeBlock = () => {
   const programmer = {
     name: "Farhan Hassan Tonmoy",
