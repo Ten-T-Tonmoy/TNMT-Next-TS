@@ -1,12 +1,10 @@
 import React from "react";
 import { Timeline } from "../../components/ui/timeline";
-import Image from "next/image";
 
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaSchool } from "react-icons/fa6";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { LuRadioTower } from "react-icons/lu";
-import { FaMapLocationDot } from "react-icons/fa6";
 import { HiBeaker } from "react-icons/hi2";
 
 export function TimeStamp() {

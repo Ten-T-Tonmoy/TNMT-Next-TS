@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ColourfulText from "../../components/ui/ColorFulText";
-import { motion } from "motion/react";
 
 export default function ColourText() {
   return (

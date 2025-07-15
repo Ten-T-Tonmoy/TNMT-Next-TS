@@ -1,8 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import {
-  atomDark,
-  vscDarkPlus,
-} from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const CodeBlock = () => {
   const programmer = {
@@ -145,38 +142,38 @@ const CodeBlock = () => {
   );
 };
 
-//rest r mock
-const CodeBlock2 = () => (
-  <SyntaxHighlighter
-    language="javascript"
-    style={vscDarkPlus}
-    showLineNumbers
-    customStyle={{
-      borderRadius: "12px",
-      padding: "20px",
-      background: "linear-gradient(135deg, #1e1e2e, #2d2d42)",
-      boxShadow: "0 10px 20px rgba(0,0,0,0.3)",
-      fontSize: "14px",
-      lineHeight: "1.6",
-    }}
-    lineNumberStyle={{ color: "#7e7e8e" }}
-  >
-    {`const programmer = {
-  name: 'Md Nasim Hosen',
-  email: 'mdnasimbosen333@gmail.com',
-  company: 'Next Level Media',
-  location: 'Pabna, Bangladesh',
-  followers: 13,
-  following: 5,
-  repositories: 80,
-  skills: [
-    'ReactJs', 'NextJs', 'Redux',
-    'ExpressJs', 'MongoDB', 'Postgres',
-    'Mongoose', 'Prisma', 'Docker',
-    'AMS', 'Redis'
-  ]
-};`}
-  </SyntaxHighlighter>
-);
+// //rest r mock
+// const CodeBlock2 = () => (
+//   <SyntaxHighlighter
+//     language="javascript"
+//     style={vscDarkPlus}
+//     showLineNumbers
+//     customStyle={{
+//       borderRadius: "12px",
+//       padding: "20px",
+//       background: "linear-gradient(135deg, #1e1e2e, #2d2d42)",
+//       boxShadow: "0 10px 20px rgba(0,0,0,0.3)",
+//       fontSize: "14px",
+//       lineHeight: "1.6",
+//     }}
+//     lineNumberStyle={{ color: "#7e7e8e" }}
+//   >
+//     {`const programmer = {
+//   name: 'Md Nasim Hosen',
+//   email: 'mdnasimbosen333@gmail.com',
+//   company: 'Next Level Media',
+//   location: 'Pabna, Bangladesh',
+//   followers: 13,
+//   following: 5,
+//   repositories: 80,
+//   skills: [
+//     'ReactJs', 'NextJs', 'Redux',
+//     'ExpressJs', 'MongoDB', 'Postgres',
+//     'Mongoose', 'Prisma', 'Docker',
+//     'AMS', 'Redis'
+//   ]
+// };`}
+//   </SyntaxHighlighter>
+// );
 
-export default CodeBlock;
+// export default CodeBlock;

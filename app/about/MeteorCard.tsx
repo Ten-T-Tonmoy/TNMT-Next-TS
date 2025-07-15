@@ -7,7 +7,6 @@ import { Typewriter } from "react-simple-typewriter";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
-import { BiLogoGmail } from "react-icons/bi";
 import { AiFillInstagram } from "react-icons/ai";
 
 /**

@@ -1,4 +1,3 @@
-import { BioRhyme } from "next/font/google";
 import React from "react";
 import { BiSolidSend } from "react-icons/bi";
 

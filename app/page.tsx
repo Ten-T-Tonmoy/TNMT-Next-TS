@@ -28,12 +28,12 @@ export default page;
 
 //incase i need a redo
 
-const BGpage = () => {
-  return (
-    <div className="">
-      <BackgroundBeamsWithCollision>
-        <GridBackgroundDemo />
-      </BackgroundBeamsWithCollision>
-    </div>
-  );
-};
+// const BGpage = () => {
+//   return (
+//     <div className="">
+//       <BackgroundBeamsWithCollision>
+//         <GridBackgroundDemo />
+//       </BackgroundBeamsWithCollision>
+//     </div>
+//   );
+// };
