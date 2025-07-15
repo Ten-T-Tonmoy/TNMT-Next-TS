@@ -29,7 +29,7 @@ export function MeteorsCard() {
         className="relative flex h-full flex-col items-start 
         justify-end overflow-hidden rounded-2xl  border border-gray-800
          bg-gradient-to-br from-slate-800 via-slate-900
-         to-gray-900  p-6 py-4 font-mono text-sm 
+         to-gray-900  p-6 py-4 md:py-8 font-mono text-sm 
          border-transparent bg-clip-padding  px-4  shadow-xl"
       >
         {/* top photo section */}
