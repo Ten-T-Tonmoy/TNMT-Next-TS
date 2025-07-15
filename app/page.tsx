@@ -6,6 +6,7 @@ import { BackgroundBeamsWithCollision } from "../components/ui/TopDropHero";
 import Homepage from "./home/page";
 import About from "./about/About";
 import NavbarTop from "./Misc/Navbar";
+import Education from "./edu/Education";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
         <div className=" w-[100vw] h-[100vh] overflow-y-scroll">
           <Homepage />
           <About />
+          <Education />
         </div>
       </BackgroundBeamsWithCollision>
     </div>

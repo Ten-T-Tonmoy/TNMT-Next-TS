@@ -1,0 +1,161 @@
+import React from "react";
+import { Timeline } from "../../components/ui/timeline";
+import Image from "next/image";
+
+import { FaGraduationCap } from "react-icons/fa6";
+import { FaSchool } from "react-icons/fa6";
+import { RiFilePaper2Fill } from "react-icons/ri";
+import { LuRadioTower } from "react-icons/lu";
+import { FaMapLocationDot } from "react-icons/fa6";
+
+export function TimeStamp() {
+  const data = [
+    {
+      title: "Early 2020",
+      content: (
+        <div
+          className="bg-black/70 relative p-6 shadow-xl mx-auto w-fit md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
+        gap-4"
+        >
+          {" "}
+          {/* box top and down color a bit */}
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         top-0 bg-gradient-to-r from-transparent via-pr2
+         to-transparent h-[2px]"
+          />
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         bottom-0 bg-gradient-to-r from-transparent via-pink-500
+         to-transparent h-[2px]"
+          />
+          <p className="mb-4  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaGraduationCap className="text-[1.8rem]" />
+            <p>
+              Completed Secondary School Certificate - <strong> SSC</strong>
+            </p>
+          </p>
+          <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaSchool className="text-[1.8rem]" />
+            <p>
+              <strong> Institute :</strong> Shamsul Hoque Khan School and
+              College
+            </p>
+          </p>
+          <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaMapLocationDot className="text-[1.8rem]" />
+            <p>
+              <strong> Board :</strong> Dhaka Board
+            </p>
+          </p>
+          <p className="mb-4 text-md font-normal gap-4 text-white items-start justify-start  flex  ">
+            <RiFilePaper2Fill className="text-[1.6rem]" />
+            <p>
+              <strong> GPA :</strong> 5.00
+            </p>
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Late 2022",
+      content: (
+        <div
+          className="bg-black/70 relative p-6 shadow-xl mx-auto w-fit md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
+        gap-4"
+        >
+          {/* box top and down color a bit */}
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         top-0 bg-gradient-to-r from-transparent via-pr2
+         to-transparent h-[2px]"
+          />
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         bottom-0 bg-gradient-to-r from-transparent via-pink-500
+         to-transparent h-[2px]"
+          />
+          <p className="mb-4  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaGraduationCap className="text-[1.8rem]" />
+            <p>
+              Completed Higher Secondary Certificate - <strong> HSC</strong>
+            </p>
+          </p>
+          <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaSchool className="text-[1.8rem]" />
+            <p>
+              <strong> Institute :</strong> Dhaka College
+            </p>
+          </p>
+          <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaMapLocationDot className="text-[1.8rem]" />
+            <p>
+              <strong> Board :</strong> Dhaka Board
+            </p>
+          </p>
+          <p className="mb-4 text-md font-normal gap-4 text-white items-start justify-start  flex  ">
+            <RiFilePaper2Fill className="text-[1.6rem]" />
+            <p>
+              <strong> GPA :</strong> 5.00
+            </p>
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Expected 2027",
+      content: (
+        <div
+          className="bg-black/70 p-6 relative shadow-xl mx-auto w-fit md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
+        gap-4"
+        >
+          {/* box top and down color a bit */}
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         top-0 bg-gradient-to-r from-transparent via-pr2
+         to-transparent h-[2px]"
+          />
+          <span
+            className="absolute inset-x-0 w-full mx-auto
+         bottom-0 bg-gradient-to-r from-transparent via-pink-500
+         to-transparent h-[2px]"
+          />
+          <p className="mb-4  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaGraduationCap className="text-[1.8rem]" />
+            <p>
+              Bachelor of Science - <strong> BSc.</strong>
+            </p>
+          </p>
+          <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <FaSchool className="text-[1.8rem]" />
+            <p>
+              <strong> Institute :</strong> University of Rajshahi
+            </p>
+          </p>
+          <p className="mb-2  text-md font-normal text-white items-start justify-start  flex gap-4 ">
+            <LuRadioTower className="text-[1.8rem]" />
+            <p>
+              <strong> Major :</strong> Information and Communication
+              Engineering{" "}
+              <strong>
+                {" "}
+                {"("}ICE{")"}
+              </strong>
+            </p>
+          </p>
+          <p className="mb-4 text-md font-normal gap-4 text-white items-start justify-start  flex  ">
+            <RiFilePaper2Fill className="text-[1.6rem]" />
+            <p>
+              <strong> CGPA :</strong> TBD
+            </p>
+          </p>
+        </div>
+      ),
+    },
+  ];
+  return (
+    <div className="relative w-full overflow-clip">
+      <Timeline data={data} />
+    </div>
+  );
+}

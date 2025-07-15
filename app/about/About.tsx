@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import CodeBlock from "./CodeCard";
 
@@ -15,12 +16,11 @@ export default About;
 //dayum sometime min-h more important
 
 const Myself = () => {
+  //typewriter + meteor Effect/ lampsec
   return (
     <div
       className="min-h-[100vh] flex items-center justify-center
   p-2 w-[92vw] md:w-[48vw]"
-    >
-        
-    </div>
+    ></div>
   );
 };
