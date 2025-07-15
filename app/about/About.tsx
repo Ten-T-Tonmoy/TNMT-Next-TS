@@ -9,6 +9,7 @@ const About = () => {
       className="min-h-[100vh] flex flex-col md:flex-row 
     bg-neutral-950 justify-center items-center  "
     >
+      
       <CodeBlock />
       <Myself />
     </div>

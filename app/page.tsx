@@ -10,7 +10,7 @@ import Education from "./edu/Education";
 
 const page = () => {
   return (
-    <div className="h-[100vh] w-[100vw] ">
+    <div className="h-[120vh] w-[100vw] ">
       <NavbarTop />
       <BackgroundBeamsWithCollision>
         <GridBackgroundDemo />
