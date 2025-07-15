@@ -10,11 +10,11 @@ import Education from "./edu/Education";
 
 const page = () => {
   return (
-    <div className="h-[120vh] w-[100vw] ">
+    <div className="h-[100vh] w-[100vw] ">
       <NavbarTop />
       <BackgroundBeamsWithCollision>
         <GridBackgroundDemo />
-        <div className=" w-[100vw] h-[100vh] overflow-y-scroll">
+        <div className=" w-[100vw] h-full overflow-y-scroll">
           <Homepage />
           <About />
           <Education />

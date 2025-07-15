@@ -49,7 +49,7 @@ export function MeteorsCard() {
             <p
               className=" transition-all duration-200 ease-in-out 
             bg-clip-text text-transparent bg-gradient-to-l md:text-end
-         from-pr1 via-sec1  to-sec2 min-h-28 text-center font-extrabold
+         from-pr1 via-sec1  to-sec2 md:min-h-28 text-center font-extrabold
             "
             >
               <Typewriter
