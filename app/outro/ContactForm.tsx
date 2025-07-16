@@ -1,4 +1,5 @@
 import React from "react";
+import { BiSolidSend } from "react-icons/bi";
 
 const ContactForm = () => {
   return (
@@ -40,6 +41,7 @@ const ContactForm = () => {
                     dark:text-white px-4 py-[12px] md:py-3 rounded-[10px]"
           >
             Send Message
+            <BiSolidSend className="scale-125 inline ml-2 mb-[2px]" />
           </button>
         </div>
       </form>

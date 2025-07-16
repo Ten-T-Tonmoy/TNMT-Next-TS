@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 //ps z-index matters cause pointer at z-50
 export const FloatingNav = ({
@@ -33,7 +34,7 @@ export const FloatingNav = ({
           href={navItem.link}
           className={cn(
             "relative flex items-center md:px-2 hover:bg-white/40 p-2 rounded-full   space-x-1 text-neutral-600 dark:text-neutral-50",
-            "hover:text-neutral-500 hover:scale-150 transition-all duration-200 ease-in-out dark:hover:text-neutral-300"
+            "hover:text-neutral-500 hover:scale-150 md:hover:scale-125 transition-all duration-200 ease-in-out dark:hover:text-neutral-300"
           )}
         >
           <span className="block scale-125">{navItem.icon}</span>
@@ -48,7 +49,9 @@ export const FloatingNav = ({
        border-neutral-200 dark:border-white/[0.2] text-black
         dark:text-white px-4 py-2 rounded-full"
       >
-        <span>Resume</span>
+        <span>
+          Resume <MdOutlineFileDownload className="scale-125 inline ml-1" />
+        </span>
         {/**top color a bit  */}
         <span
           className="absolute inset-x-0 w-[70%] mx-auto
