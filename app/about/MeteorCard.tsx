@@ -24,7 +24,7 @@ export function MeteorsCard() {
         bg-gradient-to-r from-blue-500 to-teal-500 blur-xl"
       />
 
-      {/* main Card */}
+      {/* main Card   font goes here!!!!*/}
       <div
         className="relative flex h-full flex-col items-start 
         justify-end overflow-hidden rounded-2xl  border border-gray-800
@@ -57,7 +57,8 @@ export function MeteorsCard() {
                   "FullStack Developer",
                   "MERN Developer",
                   "PERN Developer",
-                  "Fluent with Typescript",
+                  "Undergrad Student",
+                  "Fluent with TS,JS & C++",
                 ]}
                 loop={true}
                 cursor

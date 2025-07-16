@@ -7,6 +7,7 @@ import Homepage from "./home/page";
 import About from "./about/About";
 import NavbarTop from "./Misc/Navbar";
 import Education from "./edu/Education";
+import Services from "./techstacks/Services";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
         <div className=" w-[100vw] h-full overflow-y-scroll">
           <Homepage />
           <About />
+          <Services />
           <Education />
         </div>
       </BackgroundBeamsWithCollision>

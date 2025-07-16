@@ -13,7 +13,9 @@ export function TimeStamp() {
       title: "Early 2020",
       content: (
         <div
-          className="bg-black/70 relative p-6 shadow-xl mx-auto w-fit md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
+          className="bg-gradient-to-br from-slate-800 via-slate-900
+         to-gray-900   shadow-2xl border-2 w-full 
+         border-transparent bg-clip-padding relative p-6 mx-auto md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
         gap-4"
         >
           {" "}
@@ -60,7 +62,9 @@ export function TimeStamp() {
       title: "Late 2022",
       content: (
         <div
-          className="bg-black/70 relative p-6 shadow-xl mx-auto w-fit md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
+          className="bg-gradient-to-br from-slate-800 via-slate-900
+         to-gray-900   shadow-2xl border-2 w-full 
+         border-transparent bg-clip-padding relative p-6 mx-auto md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
         gap-4"
         >
           {/* box top and down color a bit */}
@@ -105,7 +109,9 @@ export function TimeStamp() {
       title: "Expected 2027",
       content: (
         <div
-          className="bg-black/70 p-6 relative shadow-xl mx-auto w-fit md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
+          className="bg-gradient-to-br from-slate-800 via-slate-900
+         to-gray-900   shadow-2xl border-2 w-full 
+         border-transparent bg-clip-padding p-6 relative mx-auto md:w-[40vw] font-semibold rounded-xl flex flex-col justify-center
         gap-4"
         >
           {/* box top and down color a bit */}

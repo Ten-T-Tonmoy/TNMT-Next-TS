@@ -16,7 +16,7 @@ const CodeBlock = () => {
         <h1 className="text-6xl w-full text-center  font-extrabold mb-16">
           About Me
         </h1>
-        <div className="">
+        <div className="md:w-[90%]">
           {/* header */}
           <div className="bg-gray-800 relative rounded-t-lg p-3 flex items-center space-x-2">
             <div className="w-3 h-3 bg-red-500 rounded-full"></div>
