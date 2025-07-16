@@ -3,6 +3,8 @@ import GradCard from "./GradCard";
 import GetInTouch from "./GetInTouch";
 import ContactForm from "./ContactForm";
 
+import {  FaHeart } from "react-icons/fa6";
+
 /**
  * 2 box method
  * copy email +
@@ -10,20 +12,49 @@ import ContactForm from "./ContactForm";
 
 const Outro = () => {
   return (
-    <div
-      className="min-h-[100vh] flex flex-col md:flex-row  gap-8
-    bg-neutral-950 justify-center items-center md:items-start py-28 "
-    >
+    <>
       <div
-        className="flex gap-8 md:flex-col-reverse h-full flex-col
-      md:w-[45%] justify-center items-center"
+        className="min-h-[100vh] flex flex-col md:flex-row  gap-8
+      bg-neutral-950 justify-center items-center md:items-start py-28 "
       >
-        <GradCard />
-        <GetInTouch />
+        <div
+          className="flex gap-8 md:flex-col-reverse h-full flex-col
+        md:w-[45%] justify-center items-center"
+        >
+          <GradCard />
+          <GetInTouch />
+        </div>
+        <ContactForm />
       </div>
-      <ContactForm />
-    </div>
+      <Footer />
+    </>
   );
 };
 
 export default Outro;
+
+import { SocialIcons } from "../about/MeteorCard";
+const Footer = () => {
+  return (
+    <div
+      className="min-h-[20vh] md:min-h-[10vh]  md:flex-row-reverse  pb-6  flex items-center flex-col
+    gap-2 justify-center bg-gradient-to-r from-pr1  to-sec2 "
+    >
+      <h1 className="text-center text-white font-semibold">
+        <br />
+        &#169; Copyright 2025.
+        <br /> Designed and Coded By <FaHeart className="inline mb-1 " />
+        <span
+          className="bg-gradient-to-r from-pr1
+         to-pr2 bg-clip-text text-transparent"
+        >
+          {" "}
+          FH. TONMOY
+        </span>
+      </h1>
+      <div>
+        <SocialIcons />
+      </div>
+    </div>
+  );
+};

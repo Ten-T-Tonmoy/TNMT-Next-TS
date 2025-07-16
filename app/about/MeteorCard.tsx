@@ -70,10 +70,10 @@ export function MeteorsCard() {
           </h1>
         </div>
 
-        <p className="relative z-15 my-4 text-base text-justify text-slate-500">
+        <p className="relative z-15 my-4 text-base text-justify px-2 md:px-6 text-slate-500">
           {" "}
           <div
-            className=" h-3 w-3 inline-flex  mr-1 md:mr-4 rounded-full border bg-gradient-to-l
+            className=" h-3 w-3 inline-flex   mr-1 md:mr-4 rounded-full border bg-gradient-to-l
         from-pr1 via-sec2 to-sec1"
           ></div>
           1 years deep into web development. Fluent in MERN & PERN stacks. Also
@@ -84,36 +84,7 @@ export function MeteorsCard() {
         <button className="rounded-lg border mx-auto cursor-none border-gray-500 px-4 py-1 text-gray-300">
           Social Links {">>>"}
         </button>
-        <div className="flex w-full justify-center gap-8 md:gap-12 items-center px-4 pt-4">
-          <a
-            href="https://www.github.com/Ten-T-Tonmoy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-4xl hover:text-blue-400" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/farhan-hassan-tonmoy-2399bb2ba/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-4xl hover:text-sky-400" />
-          </a>
-          <a
-            href="https://discord.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaDiscord className="text-4xl hover:text-blue-600" />
-          </a>
-          <a
-            href="https://www.instagram.com/sixteensixtysuper/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AiFillInstagram className="text-4xl hover:text-yellow-500" />
-          </a>
-        </div>
+        <SocialIcons />
 
         {/*meteor animation effect  */}
         <Meteors number={25} />
@@ -121,3 +92,34 @@ export function MeteorsCard() {
     </div>
   );
 }
+
+export const SocialIcons = () => {
+  return (
+    <div className="flex w-full justify-center gap-8 md:gap-12 items-center px-4 pt-4">
+      <a
+        href="https://www.github.com/Ten-T-Tonmoy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub className="text-4xl hover:text-blue-400" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/farhan-hassan-tonmoy-2399bb2ba/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin className="text-4xl hover:text-sky-400" />
+      </a>
+      <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+        <FaDiscord className="text-4xl hover:text-blue-600" />
+      </a>
+      <a
+        href="https://www.instagram.com/sixteensixtysuper/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AiFillInstagram className="text-4xl hover:text-yellow-500" />
+      </a>
+    </div>
+  );
+};

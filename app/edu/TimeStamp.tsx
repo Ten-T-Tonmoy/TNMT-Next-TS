@@ -27,7 +27,7 @@ export function TimeStamp() {
           />
           <span
             className="absolute inset-x-0 w-full mx-auto
-         bottom-0 bg-gradient-to-r from-transparent via-pink-500
+         bottom-0 bg-gradient-to-r from-transparent via-pr1
          to-transparent h-[2px]"
           />
           <p className="mb-4  text-md font-normal text-white items-start justify-start  flex gap-4 ">
@@ -75,7 +75,7 @@ export function TimeStamp() {
           />
           <span
             className="absolute inset-x-0 w-full mx-auto
-         bottom-0 bg-gradient-to-r from-transparent via-pink-500
+         bottom-0 bg-gradient-to-r from-transparent via-pr1
          to-transparent h-[2px]"
           />
           <p className="mb-4  text-md font-normal text-white items-start justify-start  flex gap-4 ">
@@ -122,7 +122,7 @@ export function TimeStamp() {
           />
           <span
             className="absolute inset-x-0 w-full mx-auto
-         bottom-0 bg-gradient-to-r from-transparent via-pink-500
+         bottom-0 bg-gradient-to-r from-transparent via-pr1
          to-transparent h-[2px]"
           />
           <p className="mb-4  text-md font-normal text-white items-start justify-start  flex gap-4 ">
