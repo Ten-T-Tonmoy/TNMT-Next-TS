@@ -29,7 +29,7 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-  title: "TMNT",
+  title: "TMNT-portfolio",
   description: "Portfolio gen1",
 };
 

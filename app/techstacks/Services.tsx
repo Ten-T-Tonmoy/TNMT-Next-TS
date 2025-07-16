@@ -56,9 +56,10 @@ const Services = () => {
 
   return (
     <div
-      className="min-h-[100vh] flex flex-col md:flex-row 
+      className="min-h-[100vh] flex flex-col 
       justify-center items-center  py-20"
     >
+      {" "}
       {/* container starts here for cards */}
       <div className="grid gap-[4vw] grid-cols-1 md:grid-cols-2">
         {services.map((service, idx) => (
