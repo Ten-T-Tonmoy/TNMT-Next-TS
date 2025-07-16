@@ -14,12 +14,12 @@ export default function GradCard() {
 
   return (
     <div
-      className="w-72 h-72 rounded-2xl items-center   justify-center
+      className="w-[80vw] md:w-[35vw] rounded-2xl items-center   justify-center
      overflow-hidden"
     >
       <BackgroundGradientAnimation>
         <div
-          className="text-xl h-72  my-auto p-4 flex flex-col items-center 
+          className="text-xl py-6  my-auto px-8  md:px-12 flex flex-col items-center 
           gap-4 justify-center font-extrabold
         "
         >
@@ -32,7 +32,7 @@ export default function GradCard() {
         border-neutral-200 dark:border-white/[0.2] text-black
         dark:text-white px-4 py-[12px] md:py-3 rounded-[10px]"
           >
-            <span className="md:text-[1rem]">
+            <span className="md:text-[.9rem]">
               {copied ? (
                 <p
                   className="flex justify-center items-center gap-2

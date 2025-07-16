@@ -43,20 +43,20 @@ export function MeteorsCard() {
           />
           <h1
             className="relative px-2 py-4  md:max-w-[50%] z-15 mb-4 text-xl md:text-3xl 
-          md:text-end font-bold text-white"
+          md:text-end font-bold text-white "
           >
             Hi.I{"'"}m Farhan Hassan Tonmoy <br />
             <p
               className=" transition-all duration-200 ease-in-out 
-            bg-clip-text text-transparent bg-gradient-to-l md:text-end
+            bg-clip-text text-transparent bg-gradient-to-l 
          from-pr1 via-sec1  to-sec2 md:min-h-28 text-center font-extrabold
             "
             >
               <Typewriter
                 words={[
                   "FullStack Developer",
-                  "MERN Developer",
-                  "PERN Developer",
+                  "MERN  Developer",
+                  "PERN  Developer",
                   "Undergrad Student",
                   "Fluent with TS,JS & C++",
                 ]}

@@ -8,6 +8,7 @@ import About from "./about/About";
 import NavbarTop from "./Misc/Navbar";
 import Education from "./edu/Education";
 import Services from "./techstacks/Services";
+import Outro from "./outro/Outro";
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
           <About />
           <Services />
           <Education />
+          <Outro />
         </div>
       </BackgroundBeamsWithCollision>
     </div>
