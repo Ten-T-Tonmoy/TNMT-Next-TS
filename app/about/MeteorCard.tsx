@@ -17,11 +17,11 @@ import { AiFillInstagram } from "react-icons/ai";
 
 export function MeteorsCard() {
   return (
-    <div className="relative w-full max-w-xl my-10">
+    <div className="relative w-full max-w-xl mt-[72px] mb-4 md:mb-0 ">
       <div
         className="absolute inset-0 h-full w-full 
-        scale-[.96] transform   bg-red-500 
-        bg-gradient-to-r from-blue-500 to-teal-500 blur-xl"
+        scale-[.96] transform 
+        bg-gradient-to-r from-[#fccf27] to-[#ec2422] blur-xl"
       />
 
       {/* main Card   font goes here!!!!*/}
@@ -29,8 +29,8 @@ export function MeteorsCard() {
         className="relative flex h-full flex-col items-start 
         justify-end overflow-hidden rounded-2xl  border border-gray-800
          bg-gradient-to-br from-slate-800 via-slate-900
-         to-gray-900  p-6 py-4 md:py-8 font-mono text-sm 
-         border-transparent bg-clip-padding  px-4  shadow-xl"
+         to-gray-900  p-6 py-8 md:py-10 font-mono text-sm 
+         border-transparent bg-clip-padding    shadow-xl"
       >
         {/* top photo section */}
         <div className="w-full flex flex-col justify-center items-center md:flex-row">
@@ -42,7 +42,7 @@ export function MeteorsCard() {
             height={350}
           />
           <h1
-            className="relative px-2 py-4  md:max-w-[50%] z-15 mb-4 text-xl md:text-3xl 
+            className="relative px-2 py-4  md:max-w-[50%] z-15  text-xl md:text-3xl 
           md:text-end font-bold text-white "
           >
             Hi.I{"'"}m Farhan Hassan Tonmoy <br />
@@ -54,17 +54,20 @@ export function MeteorsCard() {
             >
               <Typewriter
                 words={[
-                  "FullStack Developer",
-                  "MERN  Developer",
-                  "PERN  Developer",
-                  "Undergrad Student",
+                  "Full-Stack Deve loper",
+                  "MERN  Deve-loper",
+                  "PERN  Deve-loper",
+                  "Under-grad Student",
                   "Fluent with TS,JS & C++",
                 ]}
                 loop={true}
                 cursor
                 cursorStyle="|"
+                cursorBlinking={false}
+                cursorColor="white"
                 typeSpeed={70}
                 delaySpeed={1000}
+                
               />
             </p>
           </h1>
@@ -72,10 +75,10 @@ export function MeteorsCard() {
 
         <p className="relative z-15 my-4 text-base text-justify px-2 md:px-6 text-slate-500">
           {" "}
-          <div
+          <span
             className=" h-3 w-3 inline-flex   mr-1 md:mr-4 rounded-full border bg-gradient-to-l
         from-pr1 via-sec2 to-sec1"
-          ></div>
+          ></span>
           1 years deep into web development. Fluent in MERN & PERN stacks. Also
           pursuing SpringBoot , Competitive programming. Low-level systems
           fascinate me.

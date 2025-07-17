@@ -4,19 +4,18 @@ const Hero = () => {
   return (
     <div className="min-h-[100vh] w-full flex flex-col justify-center items-center  ">
       <h2
-        className="text-4xl relative z-20 md:text-4xl lg:text-7xl 
+        className="text-6xl relative z-20  lg:text-7xl 
       font-bold text-center text-black dark:text-white font-sans 
       tracking-tight flex flex-col sm:flex-row justify-center items-center sm:gap-4"
       >
         <p className="px-2">
           Hi there{" "}
           <span
-            className="bg-clip-text text-transparent bg-gradient-to-b
-         from-pr1 to-sec2"
+            className="text-pr1"
           >
             !
           </span>{" "}
-          It{`'`}s a me
+          It{`'`}s
         </p>
         {/* gradient text */}
         <div

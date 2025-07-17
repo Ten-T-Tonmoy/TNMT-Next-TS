@@ -22,7 +22,7 @@ export const FloatingNav = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
       className={cn(
-        "flex max-w-fit fixed top-10 inset-x-0 mx-auto z-[40] pr-2 pl-8 py-2 items-center justify-center space-x-4",
+        "flex max-w-fit fixed top-2 inset-x-0 mx-auto z-[40] pr-2 pl-8 py-2 items-center justify-center space-x-4",
         "border border-transparent dark:border-white/[0.2] rounded-full",
         "backdrop-blur-md bg-white/10 border border-white/20 text-white  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]",
         className
@@ -50,12 +50,13 @@ export const FloatingNav = ({
         dark:text-white px-4 py-2 rounded-full"
       >
         <span>
-          Resume <MdOutlineFileDownload className="scale-125 inline ml-1" />
+          <p className="sm:inline hidden"> Resume </p>
+          <MdOutlineFileDownload className="scale-125 inline sm:ml-1 mb-1 sm:mb-0" />
         </span>
         {/**top color a bit  */}
         <span
           className="absolute inset-x-0 w-[70%] mx-auto
-         top-[0px] bg-gradient-to-r from-transparent via-pink-600
+         top-[0px] bg-gradient-to-r from-transparent via-white
          to-transparent h-[1px]"
         />
       </button>

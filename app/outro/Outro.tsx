@@ -1,9 +1,10 @@
 import React from "react";
 import GradCard from "./GradCard";
+import { SocialIcons } from "../about/MeteorCard";
 import GetInTouch from "./GetInTouch";
 import ContactForm from "./ContactForm";
 
-import {  FaHeart } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa6";
 
 /**
  * 2 box method
@@ -33,12 +34,11 @@ const Outro = () => {
 
 export default Outro;
 
-import { SocialIcons } from "../about/MeteorCard";
 const Footer = () => {
   return (
     <div
-      className="min-h-[20vh] md:min-h-[10vh]  md:flex-row-reverse  pb-6  flex items-center flex-col
-    gap-2 justify-center bg-gradient-to-r from-pr1  to-sec2 "
+      className="min-h-[30vh] md:min-h-[20vh]  md:flex-row-reverse  pb-6  flex items-center md:items-start flex-col
+    gap-2 justify-start md:justify-center bg-gradient-to-r from-pr1  to-sec2 "
     >
       <h1 className="text-center text-white font-semibold">
         <br />

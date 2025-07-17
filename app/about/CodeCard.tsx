@@ -8,12 +8,24 @@ const CodeBlock = () => {
     location: "Demra,Dhaka",
     github: "Ten-T-Tonmoy",
     languages: ["javascript", "typescript", "C++", "C#", "java"],
+    tools: [
+      "RaylibC++",
+      "React/React-Native",
+      "NextJs",
+      "SpringBoot",
+      "Unity",
+      "Redux",
+      "Prisma",
+      "NodeJs",
+      "Express",
+      "PostgreSQL",
+    ],
   };
 
   return (
     <>
-      <div className="h-[100vh]  flex flex-col items-center justify-center p-2 w-[92vw] md:w-[48vw]">
-        <h1 className="text-6xl w-full text-center  font-extrabold mb-16">
+      <div className="h-[100vh]  flex flex-col items-center mt-20 md:mt-8 gap-8 justify-center p-2 w-[92vw] md:w-[48vw]">
+        <h1 className="text-6xl w-full text-center  font-extrabold  md:mt-4">
           About Me
         </h1>
         <div className="md:w-[90%]">
@@ -109,6 +121,8 @@ const CodeBlock = () => {
                   <span className="text-blue-300">github:</span>{" "}
                   <span className="text-orange-300">{programmer.github}</span>,
                 </div>
+
+                {/* languages and skills part  */}
                 <div>
                   <span className="text-blue-300">languages:</span>[
                   <div className="ml-4 mt-2">
@@ -122,6 +136,27 @@ const CodeBlock = () => {
                         {index < programmer.languages.length - 1 ? ", " : ""}
                         {(index + 1) % 3 === 0 &&
                         index < programmer.languages.length - 1
+                          ? "\n    "
+                          : ""}
+                      </span>
+                    ))}
+                  </div>
+                  ]
+                </div>
+
+                <div>
+                  <span className="text-blue-300">tools/frameworks:</span>[
+                  <div className="ml-4 mt-2">
+                    {programmer.tools.map((skill, index) => (
+                      <span key={skill}>
+                        <span className="text-green-300">
+                          {`"`}
+                          {skill}
+                          {`"`}
+                        </span>
+                        {index < programmer.tools.length - 1 ? ", " : ""}
+                        {(index + 1) % 3 === 0 &&
+                        index < programmer.tools.length - 1
                           ? "\n    "
                           : ""}
                       </span>
