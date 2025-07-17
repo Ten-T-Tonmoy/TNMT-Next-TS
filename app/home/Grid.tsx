@@ -1,7 +1,7 @@
 import { cn } from "../../lib/utils";
 import React from "react";
 
-export function GridBackgroundDemo() {
+export default function GridBackground() {
   return (
     <div className=" inset-0  pointer-events-none">
       {/* grid lines */}

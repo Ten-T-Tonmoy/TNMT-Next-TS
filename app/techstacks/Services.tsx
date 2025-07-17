@@ -29,22 +29,22 @@ const Services = () => {
     },
     {
       title: "Landing Page Design",
-      desc: "Creating high-converting, visually rich landing pages for products or portfolios.",
+      desc: "Creating high-converting, serveral section including landing pages for products or portfolios.",
       image: "/services/web-design3.png",
     },
     {
       title: "Ecommerce Backend",
-      desc: "Building secure and scalable ecommerce systems with authentication and payments.",
+      desc: "Building secure ecommerce systems with authentication and payments. working on stripe skills.",
       image: "/services/backend.png",
     },
     {
       title: "Design to Code",
-      desc: "Translating Figma designs into responsive, production-ready React apps.",
+      desc: "Translating Figma designs into responsive, production-ready React/NextJs apps.",
       image: "/services/website.png",
     },
     {
       title: "Problem Solving",
-      desc: "Tackling coding challenges through algorithms and competitive programming.",
+      desc: "Tackling coding challenges through algorithms and divide & conquer approach.",
       image: "/services/problem.png",
     },
     {
@@ -59,7 +59,9 @@ const Services = () => {
       className="min-h-[100vh] flex flex-col 
       justify-center items-center  py-20"
     >
-      {" "}
+      <h1 className="text-5xl md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">
+        Services & Interests
+      </h1>{" "}
       {/* container starts here for cards */}
       <div className="grid gap-[4vw] grid-cols-1 md:grid-cols-2">
         {services.map((service, idx) => (
@@ -73,12 +75,12 @@ const Services = () => {
           >
             <div
               className={`flex bg-gradient-to-br from-slate-800 via-slate-900
-         to-gray-900   shadow-2xl border-2 w-full 
+         to-gray-900   shadow-2xl border-2 w-full gap-4
          border-transparent bg-clip-padding  px-5 py-10 flex-col justify-between h-full  z-10
              ${[1, 2, 5].includes(idx) ? "rounded-r-2xl" : "rounded-l-2xl "}`}
             >
               <h1 className="text-xl font-black">{service.title}</h1>
-              <p className="w-[80%]  text-white/70 text-[.9rem]">
+              <p className="w-[80%]  text-white/70 text-[.75rem] md:text-[.8rem]">
                 {service.desc}
               </p>
             </div>

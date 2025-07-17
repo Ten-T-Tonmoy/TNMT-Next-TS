@@ -1,138 +1,132 @@
-// Core component that receives mouse positions and renders pointer and content
 "use client";
-import React, { useEffect, useState } from "react";
 
-import { motion, AnimatePresence, useMotionValue } from "motion/react";
-import { cn } from "../../lib/utils";
-export const FollowerPointerCard = ({
-  children,
-  className,
-  title,
-}: {
-  children: React.ReactNode;
+import React, { useState, useEffect, useRef, useCallback } from "react";
+
+interface PointerFollowerProps {
   className?: string;
-  title?: string | React.ReactNode;
-}) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const ref = React.useRef<HTMLDivElement>(null);
-  const [rect, setRect] = useState<DOMRect | null>(null);
-  const [isInside, setIsInside] = useState<boolean>(false); // Add this line
+}
 
-  useEffect(() => {
-    if (ref.current) {
-      setRect(ref.current.getBoundingClientRect());
-    }
+const PointerFollower: React.FC<PointerFollowerProps> = ({
+  className = "",
+}) => {
+  const [position, setPosition] = useState<{ x: number; y: number }>({
+    x: 0,
+    y: 0,
+  });
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [isClicking, setIsClicking] = useState<boolean>(false);
+  const [isHovering, setIsHovering] = useState<boolean>(false);
+  const rafRef = useRef<number>(null);
+
+  // Optimized mouse move handler with RAF
+  const handleMouseMove = useCallback(
+    (e: MouseEvent) => {
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+
+      rafRef.current = requestAnimationFrame(() => {
+        setPosition({ x: e.clientX, y: e.clientY });
+        if (!isVisible) setIsVisible(true);
+      });
+    },
+    [isVisible]
+  );
+
+  const handleMouseEnter = useCallback(() => setIsVisible(true), []);
+  const handleMouseLeave = useCallback(() => setIsVisible(false), []);
+  const handleMouseDown = useCallback(() => setIsClicking(true), []);
+  const handleMouseUp = useCallback(() => setIsClicking(false), []);
+
+  // Detect hoverable elements
+  const handleMouseOver = useCallback((e: MouseEvent) => {
+    const target = e.target as HTMLElement;
+    const isHoverable =
+      target.matches(
+        'a, button, [role="button"], input, select, textarea, [onclick], [cursor="pointer"]'
+      ) || window.getComputedStyle(target).cursor === "pointer";
+    setIsHovering(isHoverable);
   }, []);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (rect) {
-      const scrollX = window.scrollX;
-      const scrollY = window.scrollY;
-      x.set(e.clientX - rect.left + scrollX);
-      y.set(e.clientY - rect.top + scrollY);
-    }
-  };
-  const handleMouseLeave = () => {
-    setIsInside(false);
-  };
+  useEffect(() => {
+    const options: AddEventListenerOptions = { passive: true };
 
-  const handleMouseEnter = () => {
-    setIsInside(true);
-  };
+    // Hide default cursor
+    document.body.style.cursor = "none";
+
+    document.addEventListener("mousemove", handleMouseMove, options);
+    document.addEventListener("mouseenter", handleMouseEnter, options);
+    document.addEventListener("mouseleave", handleMouseLeave, options);
+    document.addEventListener("mousedown", handleMouseDown, options);
+    document.addEventListener("mouseup", handleMouseUp, options);
+    document.addEventListener("mouseover", handleMouseOver, options);
+
+    return () => {
+      // Restore default cursor
+      document.body.style.cursor = "auto";
+
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseenter", handleMouseEnter);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mousedown", handleMouseDown);
+      document.removeEventListener("mouseup", handleMouseUp);
+      document.removeEventListener("mouseover", handleMouseOver);
+
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [
+    handleMouseMove,
+    handleMouseEnter,
+    handleMouseLeave,
+    handleMouseDown,
+    handleMouseUp,
+    handleMouseOver,
+  ]);
+
+  if (!isVisible) return null;
+
   return (
     <div
-      onMouseLeave={handleMouseLeave}
-      onMouseEnter={handleMouseEnter}
-      onMouseMove={handleMouseMove}
+      className={`pointer-events-none fixed z-[9999] ${className}`}
       style={{
-        cursor: "none",
+        left: position.x,
+        top: position.y,
+        transform: "translate(-50%, -50%)",
       }}
-      ref={ref}
-      className={cn("relative", className)}
     >
-      <AnimatePresence>
-        {isInside && <FollowPointer x={x} y={y} title={title} />}
-      </AnimatePresence>
-      {children}
+      {/* Outer circle border */}
+      <div
+        className={`absolute border-2 border-cyan-400 rounded-full transition-all duration-300 ease-out ${
+          isClicking
+            ? "w-8 h-8 rounded-lg rotate-45 border-cyan-300"
+            : isHovering
+            ? "w-12 h-12 border-cyan-300"
+            : "w-6 h-6"
+        }`}
+        style={{
+          transform: "translate(-50%, -50%)",
+          left: "50%",
+          top: "50%",
+        }}
+      />
+
+      {/* Inner dot */}
+      <div
+        className={`absolute rounded-full bg-cyan-400 transition-all duration-300 ease-out ${
+          isClicking
+            ? "w-2 h-2 bg-cyan-300 rounded-sm rotate-45"
+            : "w-1.5 h-1.5"
+        }`}
+        style={{
+          transform: "translate(-50%, -50%)",
+          left: "50%",
+          top: "50%",
+        }}
+      />
     </div>
   );
 };
 
-export const FollowPointer = ({
-  x,
-  y,
-  title,
-}: {
-  x: any;
-  y: any;
-  title?: string | React.ReactNode;
-}) => {
-  const colors = [
-    "#0ea5e9",
-    "#14b8a6",
-    "#22c55e",
-    "#3b82f6",
-    "#ef4444",
-    "#eab308",
-    "#5409DA",
-    "#8DD8FF",
-  ];
-  return (
-    <motion.div
-      className="absolute z-50 h-4 w-4 rounded-full"
-      style={{
-        top: y,
-        left: x,
-        pointerEvents: "none",
-      }}
-      initial={{
-        scale: 1,
-        opacity: 1,
-      }}
-      animate={{
-        scale: 1,
-        opacity: 1,
-      }}
-      exit={{
-        scale: 0,
-        opacity: 0,
-      }}
-    >
-      <svg
-        stroke="currentColor"
-        fill="currentColor"
-        strokeWidth="1"
-        viewBox="0 0 16 16"
-        className="h-6 w-6 -translate-x-[12px] -translate-y-[10px] -rotate-[70deg] transform stroke-sky-600 text-sky-500"
-        height="1em"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"></path>
-      </svg>
-      <motion.div
-        style={{
-          backgroundColor: colors[Math.floor(Math.random() * colors.length)],
-        }}
-        initial={{
-          scale: 0.5,
-          opacity: 0,
-        }}
-        animate={{
-          scale: 1,
-          opacity: 1,
-        }}
-        exit={{
-          scale: 0.5,
-          opacity: 0,
-        }}
-        className={
-          "min-w-max rounded-full bg-neutral-200 px-2 py-2 font-bold text-[.6rem] whitespace-nowrap text-white"
-        }
-      >
-        {title || `Sup Traveller`}
-      </motion.div>
-    </motion.div>
-  );
-};
+export default PointerFollower;

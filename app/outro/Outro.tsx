@@ -37,7 +37,7 @@ export default Outro;
 const Footer = () => {
   return (
     <div
-      className="min-h-[30vh] md:min-h-[20vh]  md:flex-row-reverse  pb-6  flex items-center md:items-start flex-col
+      className="min-h-[30vh] md:min-h-[12vh]  md:flex-row-reverse  pb-6  flex items-center md:items-start flex-col
     gap-2 justify-start md:justify-center bg-gradient-to-r from-pr1  to-sec2 "
     >
       <h1 className="text-center text-white font-semibold">

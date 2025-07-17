@@ -43,9 +43,9 @@ export function MeteorsCard() {
           />
           <h1
             className="relative px-2 py-4  md:max-w-[50%] z-15  text-xl md:text-3xl 
-          md:text-end font-bold text-white "
+          md:text-end font-bold text-white text-center "
           >
-            Hi.I{"'"}m Farhan Hassan Tonmoy <br />
+            Hi! I{"'"}m Farhan Hassan Tonmoy <br />
             <p
               className=" transition-all duration-200 ease-in-out 
             bg-clip-text text-transparent bg-gradient-to-l 
@@ -67,7 +67,6 @@ export function MeteorsCard() {
                 cursorColor="white"
                 typeSpeed={70}
                 delaySpeed={1000}
-                
               />
             </p>
           </h1>
@@ -76,12 +75,12 @@ export function MeteorsCard() {
         <p className="relative z-15 my-4 text-base text-justify px-2 md:px-6 text-slate-500">
           {" "}
           <span
-            className=" h-3 w-3 inline-flex   mr-1 md:mr-4 rounded-full border bg-gradient-to-l
+            className=" h-3 w-3 inline-flex   mr-4  md:mr-4 rounded-full border bg-gradient-to-l
         from-pr1 via-sec2 to-sec1"
           ></span>
           1 years deep into web development. Fluent in MERN & PERN stacks. Also
-          pursuing SpringBoot , Competitive programming. Low-level systems
-          fascinate me.
+          pursuing SpringBoot , unity , Competitive programming. Low-level
+          systems fascinate me.
         </p>
 
         <button className="rounded-lg border mx-auto cursor-none border-gray-500 px-4 py-1 text-gray-300">

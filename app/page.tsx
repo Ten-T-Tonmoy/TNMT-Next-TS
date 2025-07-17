@@ -1,5 +1,5 @@
 import React from "react";
-import { GridBackgroundDemo } from "./home/Grid";
+import GridBackground from "./home/Grid";
 import { BackgroundBeamsWithCollision } from "../components/ui/TopDropHero";
 
 //pages
@@ -13,10 +13,10 @@ import Outro from "./outro/Outro";
 const page = () => {
   return (
     <div className="h-[100vh] w-[100vw] ">
-      <NavbarTop />
       <BackgroundBeamsWithCollision>
-        <GridBackgroundDemo />
         <div className=" w-[100vw] h-full overflow-y-scroll">
+          <GridBackground />
+          <NavbarTop />
           <Homepage />
           <About />
           <Services />
