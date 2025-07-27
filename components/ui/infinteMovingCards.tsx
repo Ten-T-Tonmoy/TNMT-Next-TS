@@ -1,4 +1,5 @@
 "use client";
+import StackIcon from "tech-stack-icons";
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
@@ -14,7 +15,8 @@ export const InfiniteMovingCards = ({
     quote?: string;
     name?: string;
     title?: string;
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
+    tech?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -81,15 +83,24 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-1",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li key={idx}>
-            <div className=" font-semibold text-white">{item.title}</div>
+            <div className=" font-bold text-slate-200 text-center">
+              {item.title}
+            </div>
             {item.icon}
+            <StackIcon
+              className={`relative z-20 rounded-[10px]  flex items-center justify-center w-20 p-2
+                    backdrop-blur-md bg-white/10 border border-white/20 text-white
+                   
+                    `}
+              name={item.tech === undefined ? "null" : item.tech}
+            />
           </li>
         ))}
       </ul>
