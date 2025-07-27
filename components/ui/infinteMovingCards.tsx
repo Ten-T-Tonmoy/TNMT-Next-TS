@@ -14,6 +14,7 @@ export const InfiniteMovingCards = ({
     quote?: string;
     name?: string;
     title?: string;
+    icon: React.ReactNode;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -86,7 +87,10 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => (
-          <li key={idx}>blank for icons</li>
+          <li key={idx}>
+            <div className=" font-semibold text-white">{item.title}</div>
+            {item.icon}
+          </li>
         ))}
       </ul>
     </div>

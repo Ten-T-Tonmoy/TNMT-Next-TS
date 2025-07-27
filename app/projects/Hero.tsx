@@ -24,7 +24,7 @@ const Hero = () => {
     setIndex((prev) => (prev - 1 + banners.length) % banners.length);
   };
 
-  const dotSlide = (idx) => {
+  const dotSlide = (idx: number) => {
     setIndex(idx);
   };
 
