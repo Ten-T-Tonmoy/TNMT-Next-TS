@@ -168,7 +168,8 @@ const GlowingTimeline = () => {
 
           {/* Animated glowing progress line */}
           <div
-            className="absolute left-8 top-0 w-1 bg-gradient-to-b from-cyan-400 via-blue-500 to-purple-600 rounded-full transition-all duration-300 ease-out"
+            className="absolute left-8 top-0 w-1 bg-gradient-to-b from-cyan-400 via-blue-500 to-purple-600 rounded-full
+             transition-all duration-300 ease-out"
             style={{
               height: `${scrollProgress * 100}%`,
               boxShadow: `

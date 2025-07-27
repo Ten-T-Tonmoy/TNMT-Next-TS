@@ -1,4 +1,5 @@
 import { BiSolidSend } from "react-icons/bi";
+import { ContainerTextFlip } from "@/components/ui/text-flip";
 
 const Hero = () => {
   return (
@@ -9,13 +10,7 @@ const Hero = () => {
       tracking-tight flex flex-col sm:flex-row justify-center items-center sm:gap-4"
       >
         <p className="px-2">
-          Hi there{" "}
-          <span
-            className="text-pr1"
-          >
-            !
-          </span>{" "}
-          It{`'`}s
+          Hi there <span className="text-pr1">!</span> It{`'`}s
         </p>
         {/* gradient text */}
         <div
@@ -37,16 +32,25 @@ const Hero = () => {
           </div>
         </div>
       </h2>
-      <p className="text-xl sm:text-2xl md:text-3xl font-poppin text-center font-normal">
-        Fullstack{" "}
+      <p
+        className="text-xl text-neutral-200 font-[500]  max-w-[90%] md:max-w-[60%]
+       text-center "
+      >
+        I{"'"}m a sophomore IT undergrad with a knack for turning bold ideas
+        into real products.
         <span
-          className="bg-clip-text text-transparent bg-gradient-to-r
-         from-pr1 via-pr2 font-bold to-sec2 "
-        >
-          PERN
-        </span>{" "}
-        Developer
+          className=" 
+"
+        ></span>{" "}
       </p>
+      <ContainerTextFlip
+        words={[
+          "FullStack PERN Developer",
+          "Sophomere IT undergrad",
+          "System Design Enthusiast",
+          "Typescript All The Way",
+        ]}
+      />
 
       {/** button for contact? cursor-none */}
       <div className="flex justify-center items-center gap-4 md:text-[1.4rem]">

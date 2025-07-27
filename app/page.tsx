@@ -9,17 +9,19 @@ import NavbarTop from "./Misc/Navbar";
 import Education from "./edu/Education";
 import Services from "./techstacks/Services";
 import Outro from "./outro/Outro";
+import { TechStacksCards } from "./techstacks/TechStacksCards";
 
 const page = () => {
   return (
     <div className="h-[100vh] w-[100vw] ">
       <BackgroundBeamsWithCollision>
-        <div className=" w-[100vw] h-full overflow-y-scroll">
+        <div className=" w-[100vw] h-full overflow-y-scroll overflow-x-hidden">
           <GridBackground />
           <NavbarTop />
           <Homepage />
           <About />
           <Services />
+          <TechStacksCards />
           <Education />
           <Outro />
         </div>

@@ -8,7 +8,7 @@ export default function GridBackground() {
       <div
         className={cn(
           "absolute inset-0",
-          "[background-size:90px_90px]",
+          "[background-size:70px_70px]",
           "[background-image:linear-gradient(to_right,rgba(255,255,255,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.09)_1px,transparent_1px)]",
           "dark:[background-image:linear-gradient(to_right,rgba(255,255,255,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.09)_1px,transparent_1px)]"
         )}

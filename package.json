@@ -12,6 +12,7 @@
     "@tabler/icons-react": "^3.34.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.0.0-alpha.1",
+    "lucide-react": "^0.525.0",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.23.5",
     "next": "^15.3.5",
@@ -22,7 +23,8 @@
     "react-simple-typewriter": "^5.0.1",
     "react-syntax-highlighter": "^15.6.1",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tech-stack-icons": "^3.3.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

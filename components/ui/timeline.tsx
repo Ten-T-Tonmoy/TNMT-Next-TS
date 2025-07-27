@@ -1,9 +1,5 @@
 "use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
+import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -32,13 +28,20 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full bg-black/10 font-sans md:px-10" ref={containerRef}>
+    <div
+      className="w-full md:w-[80vw]  mx-auto font-sans md:px-10"
+      ref={containerRef}
+    >
       <div className="max-w-7xl mx-auto py-4 px-4 md:px-8 lg:px-10">
-        <h2 className="text-xl md:text-4xl  font-bold dark:text-white max-w-4xl">
-          My Academic journey so far ..
-        </h2>
+        <h1
+          className="text-3xl md:text-5xl text-center md:text-start 
+        font-extrabold text-white mb-4"
+        >
+          My Academic Journey So Far...
+        </h1>
       </div>
 
+      {/* timeline and shii */}
       <div ref={ref} className="relative max-w-7xl mx-auto pb-10">
         {data.map((item, index) => (
           <div
