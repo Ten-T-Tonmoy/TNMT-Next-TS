@@ -36,7 +36,7 @@ const Outro = () => {
 
 export default Outro;
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div
       className="min-h-[25vh] md:min-h-[12vh]  md:flex-row-reverse  pb-6  flex items-center md:items-start flex-col

@@ -59,7 +59,7 @@ const Services = () => {
       className="min-h-[100vh] flex flex-col 
       justify-center items-center  py-20"
     >
-      <h1 className="text-5xl md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">
+      <h1 className="text-[42px] md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">
         Services & Interests
       </h1>{" "}
       {/* container starts here for cards */}
@@ -68,7 +68,7 @@ const Services = () => {
           // shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
           <div
             key={idx}
-            className={`relative z-10 rounded-2xl  flex items-center justify-center w-[90vw] md:w-[35vw]
+            className={`relative z-10 rounded-2xl  flex items-center justify-center w-[85vw] md:w-[35vw]
         backdrop-blur-md bg-white/10 border border-white/20 text-white
         ${[1, 2, 5].includes(idx) ? "flex-row-reverse" : " "}
         `}

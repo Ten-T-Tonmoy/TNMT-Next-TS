@@ -1,34 +1,35 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "../../components/ui/ResNavbar";
-import { IconHome, IconUser } from "@tabler/icons-react";
-import { IoNewspaperOutline } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
+import { GrAchievement } from "react-icons/gr";
+import { CgProfile } from "react-icons/cg";
+import { IoIosHome } from "react-icons/io";
 
 export default function FloatingNavDemo() {
   const navItems = [
     {
       name: "Home",
       link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IoIosHome className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },
     {
       name: "About",
       link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <CgProfile className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Education",
-      link: "/education",
+      link: "/edu",
       icon: (
-        <FaGraduationCap className="scale-125 h-4 w-4 text-neutral-500 dark:text-white" />
+        <FaGraduationCap className=" h-5 w-5 text-neutral-500 dark:text-white" />
       ),
     },
     {
       name: "Projects",
       link: "/projects",
       icon: (
-        <IoNewspaperOutline className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <GrAchievement className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];

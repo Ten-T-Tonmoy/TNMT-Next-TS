@@ -93,10 +93,16 @@ const config = {
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
         text: "text 4s ease infinite",
+        "spin-slow": "spin 4s linear infinite",
+        "spin-slow-reverse": "spinReverse 4s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        spinReverse: {
+          from: { transform: "rotate(360deg)" },
+          to: { transform: "rotate(0deg)" },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
