@@ -13,7 +13,7 @@ const UnderConstruction = () => {
     >
       <BsFillGearFill
         size={150}
-        className="text-white/50 fixed animate-spin-slow-reverse
+        className="text-white/40 fixed animate-spin-slow-reverse
         right-6 top-1/2 drop-shadow-xl pointer-events-none"
       />
       <BsGearWide
@@ -44,10 +44,10 @@ const UnderConstruction = () => {
       <Link href="/">
         <button
           className="px-4 z-10 relative  py-2 font-semibold cursor-none  border-2 border-pr2 mt-6 rounded-xl
-        transition-all duration-300 ease-in-out hover:scale-105 text-white text-3xl
+        transition-all duration-300 ease-in-out hover:scale-105 text-white text-2xl
                    bg-gradient-to-r active:scale-95 flex justify-center items-center gap-2"
         >
-          Go to Home <BiSolidSend className="scale-125 mt-2" />
+          Go to Home <BiSolidSend className="scale-125 mt-1" />
         </button>
       </Link>
     </div>

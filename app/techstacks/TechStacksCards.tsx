@@ -70,10 +70,10 @@ const backendStacks = [
   { title: "MongoDB", tech: "mongodb" },
   { title: "NPM", tech: "npm2" },
   { title: "PUG", tech: "pugjs" },
+  { title: "Mongoose", tech: "mongoose" },
   { title: "Vercel", tech: "vercel" },
   { title: "Zod", tech: "zod" },
   { title: "EsLint", tech: "eslint" },
-  { title: "Mongoose", tech: "mongoose" },
   { title: "C#", tech: "c#" },
 ];
 

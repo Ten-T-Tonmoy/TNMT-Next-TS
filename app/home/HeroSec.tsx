@@ -5,7 +5,8 @@ const Hero = () => {
   return (
     <div className="min-h-[100vh] w-full flex flex-col  justify-center items-center  ">
       <h2
-        className="text-6xl relative z-20  lg:text-7xl 
+        className="text-6xl relative z-20  lg:text-7xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
+        backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-3
       font-bold text-center text-black dark:text-white font-sans 
       tracking-tight flex flex-col sm:flex-row justify-center items-center sm:gap-4"
       >
@@ -33,7 +34,7 @@ const Hero = () => {
         </div>
       </h2>
       <p
-        className="text-xl text-neutral-200 font-[500]  max-w-[80%] md:max-w-[60%]
+        className="text-xl text-neutral-200 font-[500] mt-1 max-w-[80%] md:max-w-[60%]
        text-center "
       >
         I{"'"}m a sophomore IT undergrad with a knack for turning bold ideas
@@ -45,10 +46,10 @@ const Hero = () => {
       </p>
       <ContainerTextFlip
         words={[
-          "FullStack Developer",
-          "Sophomere IT Undergrad",
-          "System Design Enthusiast",
+          "FullStack Web Developer",
           "Typescript All The Way",
+          "System Design Enthusiast",
+          "Sophomere IT Undergrad",
         ]}
       />
 

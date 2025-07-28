@@ -14,12 +14,12 @@ export default function GridBackground() {
         )}
       />
       {/* Faded effect */}
-      <div
+      {/* <div
         className="pointer-events-none absolute
        inset-0 flex items-center justify-center bg-white/10
         [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]
          dark:bg-black/20"
-      ></div>
+      ></div> */}
       <p
         className="relative z-20 bg-gradient-to-b
        from-neutral-200 to-neutral-500 bg-clip-text 
