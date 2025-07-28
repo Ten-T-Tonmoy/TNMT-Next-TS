@@ -31,6 +31,9 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: "TNMY-portfolio",
   description: "Portfolio gen1",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

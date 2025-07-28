@@ -74,8 +74,8 @@ const Services = () => {
         `}
           >
             <div
-              className={`flex    border-2  w-full gap-4
-          px-5 py-10 flex-col justify-between h-full  z-10
+              className={`flex    w-full gap-4
+          px-5 py-8 flex-col justify-center h-full  z-10
              ${
                [1, 2, 5].includes(idx)
                  ? "rounded-r-2xl border-l-0 shadow-[-.2px_0_10px_rgba(0,0,0,0.1)] "
@@ -83,7 +83,7 @@ const Services = () => {
              }`}
             >
               <h1 className="text-xl font-black">{service.title}</h1>
-              <p className="w-[80%]  text-white/70 text-[.85rem] md:text-[.9rem]">
+              <p className=" font-normal  text-white/70 text-[.85rem] md:text-[.9rem]">
                 {service.desc}
               </p>
             </div>

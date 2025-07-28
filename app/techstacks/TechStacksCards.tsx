@@ -1,5 +1,4 @@
 "use client";
-import StackIcon from "tech-stack-icons";
 
 import { InfiniteMovingCards } from "@/components/ui/infinteMovingCards";
 import React from "react";
@@ -7,7 +6,7 @@ import React from "react";
 export function TechStacksCards() {
   return (
     <div
-      className=" rounded-md  flex flex-col antialiased
+      className=" rounded-md  flex flex-col antialiased my-40
     items-center justify-center relative overflow-hidden"
     >
       <InfiniteMovingCards
@@ -72,12 +71,12 @@ const backendStacks = [
   { title: "Zod", tech: "zod" },
   { title: "EsLint", tech: "eslint" },
   { title: "Mongoose", tech: "mongoose" },
-  { title: "C++", tech: "c#" },
+  { title: "C#", tech: "c#" },
 ];
 
 const lastRow = [
   { title: "Mongoose", tech: "mongoose" },
-  { title: "C++", tech: "c#" },
+  { title: "C#", tech: "c#" },
   { title: "Express", tech: "expressjs" },
   { title: "Prisma", tech: "prisma" },
   { title: "Jest", tech: "jest" },

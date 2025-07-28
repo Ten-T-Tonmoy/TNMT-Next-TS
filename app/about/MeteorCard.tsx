@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
+import { BackgroundGradient } from "@/components/ui/bgGradient";
 
 /**
  * photo
@@ -17,12 +18,12 @@ import { AiFillInstagram } from "react-icons/ai";
 
 export function MeteorsCard() {
   return (
-    <div className="relative w-full max-w-xl mt-[72px] mb-4 md:mb-0 ">
-      <div
+    <BackgroundGradient className="relative w-full max-w-xl ">
+      {/* <div
         className="absolute inset-0 h-full w-full 
         scale-[.96] transform 
         bg-gradient-to-r from-[#fccf27] to-[#ec2422] blur-xl"
-      />
+      /> */}
 
       {/* main Card   font goes here!!!!*/}
       <div
@@ -32,8 +33,8 @@ export function MeteorsCard() {
          to-gray-900  p-6 py-8 md:py-10 font-mono text-sm 
          border-transparent bg-clip-padding    shadow-xl"
       >
-        {/* top photo section */}
-        <div className="w-full flex flex-col justify-center items-center md:flex-row">
+        {/* top photo section  flex-row set at md if u wanna rollback*/}
+        <div className="w-full flex flex-col justify-center items-center ">
           <Image
             className="rounded-full border-[3px]  "
             src="/photos/Me.png"
@@ -42,22 +43,22 @@ export function MeteorsCard() {
             height={350}
           />
           <h1
-            className="relative px-2 py-4  md:max-w-[50%] z-15  text-xl md:text-3xl 
+            className="relative px-2 py-4  mdt:max-w-[50%] z-15  text-xl md:text-3xl 
           md:text-end font-bold text-white text-center "
           >
             Hi! I{"'"}m Farhan Hassan Tonmoy <br />
             <p
               className=" transition-all duration-200 ease-in-out 
             bg-clip-text text-transparent bg-gradient-to-l 
-         from-pr1 via-sec1  to-sec2 md:min-h-28 text-center font-extrabold
+         from-pr1 via-sec1  to-sec2  text-center font-extrabold
             "
             >
               <Typewriter
                 words={[
-                  "Full-Stack Deve loper",
-                  "MERN  Deve-loper",
-                  "PERN  Deve-loper",
-                  "Under-grad Student",
+                  "FullStack Developer",
+                  "MERN  Developer",
+                  "PERN  Developer",
+                  "Undergrad Student",
                   "Fluent with TS,JS & C++",
                 ]}
                 loop={true}
@@ -91,7 +92,7 @@ export function MeteorsCard() {
         {/*meteor animation effect  */}
         <Meteors number={25} />
       </div>
-    </div>
+    </BackgroundGradient>
   );
 }
 
