@@ -28,7 +28,7 @@ export function TimeStamp() {
           />
 
           <p className="mb-4 text-md font-normal text-white items-start justify-start flex gap-4">
-            <FaGraduationCap className="text-[1.8rem] text-blue-400" />
+            <FaGraduationCap className="text-[2.5rem] md:text-[1.8rem]  text-blue-400" />
             <p>
               Completed Secondary School Certificate - <strong>SSC</strong>
             </p>
@@ -37,7 +37,7 @@ export function TimeStamp() {
             className="mb-2 text-md font-normal text-white 
           items-start justify-start flex gap-4"
           >
-            <FaSchool className="text-[1.8rem] text-green-400" />
+            <FaSchool className="text-[2.5rem] md:text-[1.8rem] text-green-400" />
             <p>
               <strong>Institute:</strong> Shamsul Hoque Khan School and College
             </p>
@@ -86,7 +86,7 @@ export function TimeStamp() {
             className="mb-4 text-md font-normal text-white items-start 
           justify-start flex gap-4"
           >
-            <FaGraduationCap className="text-[1.8rem] text-blue-400" />
+            <FaGraduationCap className="text-[2.5rem] md:text-[1.8rem] text-blue-400" />
             <p>
               Completed Higher Secondary Certificate - <strong>HSC</strong>
             </p>
@@ -158,7 +158,7 @@ export function TimeStamp() {
             </p>
           </p>
           <p className="mb-2 text-md font-normal text-white items-start justify-start flex gap-4">
-            <LuRadioTower className="text-[2.5rem] sm:text-[2rem] text-cyan-400" />
+            <LuRadioTower className="text-[2.5rem] md:text-[2rem] text-cyan-400" />
             <p>
               <strong>Major:</strong> Information and Communication Engineering{" "}
               <strong>(ICE)</strong>

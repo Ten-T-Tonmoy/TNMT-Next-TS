@@ -24,7 +24,7 @@ const CodeBlock = () => {
 
   return (
     <>
-      <div className="h-[100vh]  flex flex-col items-center mt-20 md:mt-8 gap-8 justify-center p-2 w-[92vw] md:w-[48vw]">
+      <div className="h-[100vh]  flex flex-col items-center mt-20 md:mt-8 gap-8 justify-center p-2 w-[92vw] md:max-w-[45vw]">
         <h1 className="text-6xl w-full text-center  font-extrabold  md:mt-4">
           About Me
         </h1>

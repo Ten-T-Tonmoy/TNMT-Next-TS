@@ -6,7 +6,7 @@ import { MeteorsCard } from "./MeteorCard";
 const About = () => {
   return (
     <div
-      className="min-h-[100vh] flex flex-col md:flex-row 
+      className="min-h-[100vh] flex pb-20 sm:pb-0 flex-col md:flex-row 
     bg-neutral-950 justify-center items-center  gap-14"
     >
       <CodeBlock />
@@ -23,8 +23,8 @@ const Myself = () => {
   //typewriter + meteor Effect/ lampsec
   return (
     <div
-      className="min-h-[100vh] flex items-center justify-center
-    p-2 w-[92vw] md:w-[48vw]"
+      className=" flex items-center justify-center
+    p-2 w-[92vw] md:w-[45vw]"
     >
       <MeteorsCard />
     </div>

@@ -3,7 +3,7 @@ import { ContainerTextFlip } from "@/components/ui/text-flip";
 
 const Hero = () => {
   return (
-    <div className="min-h-[100vh] w-full flex flex-col justify-center items-center  ">
+    <div className="min-h-[100vh] w-full flex flex-col  justify-center items-center  ">
       <h2
         className="text-6xl relative z-20  lg:text-7xl 
       font-bold text-center text-black dark:text-white font-sans 
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </h2>
       <p
-        className="text-xl text-neutral-200 font-[500]  max-w-[90%] md:max-w-[60%]
+        className="text-xl text-neutral-200 font-[500]  max-w-[80%] md:max-w-[60%]
        text-center "
       >
         I{"'"}m a sophomore IT undergrad with a knack for turning bold ideas
@@ -45,8 +45,8 @@ const Hero = () => {
       </p>
       <ContainerTextFlip
         words={[
-          "FullStack PERN Developer",
-          "Sophomere IT undergrad",
+          "FullStack Developer",
+          "Sophomere IT Undergrad",
           "System Design Enthusiast",
           "Typescript All The Way",
         ]}

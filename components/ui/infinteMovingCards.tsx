@@ -1,7 +1,7 @@
 "use client";
 import StackIcon from "tech-stack-icons";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({

@@ -79,9 +79,9 @@ export function MeteorsCard() {
             className=" h-3 w-3 inline-flex   mr-4  md:mr-4 rounded-full border bg-gradient-to-l
         from-pr1 via-sec2 to-sec1"
           ></span>
-          1 years deep into web development. Fluent in MERN & PERN stacks. Also
-          pursuing SpringBoot , unity , Competitive programming. Low-level
-          systems fascinate me.
+          Fullstack developer based on Dhaka,Bangladesh . 1 years deep into web
+          development. Fluent in MERN & PERN stacks. Also pursuing SpringBoot ,
+          unity , Competitive programming. Low-level systems fascinate me.
         </p>
 
         <button className="rounded-lg border mx-auto cursor-none border-gray-500 px-4 py-1 text-gray-300">

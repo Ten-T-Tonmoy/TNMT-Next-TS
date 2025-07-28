@@ -6,7 +6,7 @@ import { BackgroundBeamsWithCollision } from "../components/ui/TopDropHero";
 import Homepage from "./home/page";
 import About from "./about/About";
 import NavbarTop from "./Misc/Navbar";
-import Education from "./edu/Education";
+// import Education from "./edu/Education"; its better not to ship sometimes
 import Services from "./techstacks/Services";
 import Outro from "./outro/Outro";
 import { TechStacksCards } from "./techstacks/TechStacksCards";
@@ -22,7 +22,7 @@ const page = () => {
           <About />
           <Services />
           <TechStacksCards />
-          <Education />
+          {/* <Education /> */}
           <Outro />
         </div>
       </BackgroundBeamsWithCollision>

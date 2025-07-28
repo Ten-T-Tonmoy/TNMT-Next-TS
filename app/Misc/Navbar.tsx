@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "../../components/ui/ResNavbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconHome, IconUser } from "@tabler/icons-react";
 import { IoNewspaperOutline } from "react-icons/io5";
+import { FaGraduationCap } from "react-icons/fa6";
 
 export default function FloatingNavDemo() {
   const navItems = [
@@ -17,15 +18,15 @@ export default function FloatingNavDemo() {
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contact",
-      link: "/contact",
+      name: "Education",
+      link: "/education",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <FaGraduationCap className="scale-125 h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
     {
-      name: "Blogs",
-      link: "/blogs",
+      name: "Projects",
+      link: "/projects",
       icon: (
         <IoNewspaperOutline className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

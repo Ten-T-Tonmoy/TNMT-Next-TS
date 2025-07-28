@@ -6,9 +6,12 @@ import React from "react";
 export function TechStacksCards() {
   return (
     <div
-      className=" rounded-md  flex flex-col antialiased my-40
+      className=" rounded-md  flex flex-col antialiased mb-40
     items-center justify-center relative overflow-hidden"
     >
+      <h1 className="text-5xl md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">
+        FrameWorks & Tools
+      </h1>
       <InfiniteMovingCards
         items={frontendStacks}
         direction="right"
@@ -44,7 +47,7 @@ const frontendStacks = [
   { title: "ShadcnUI", tech: "shadcnui" },
   { title: "JavaScript", tech: "js" },
   { title: "React", tech: "react" },
-  { title: "Next.js", tech: "nextjs2" },
+  { title: "Next.js", tech: "nextjs" },
   { title: "Redux", tech: "redux" },
   { title: "TypeScript", tech: "typescript" },
   { title: "Framer", tech: "framer" },
