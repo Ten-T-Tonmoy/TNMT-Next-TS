@@ -6,8 +6,9 @@ import { FaPlayCircle } from "react-icons/fa";
 
 const ProjectCards = () => {
   return (
-    <div className="min-h-screen py-20">
-      <Cards></Cards>
+    <div className="min-h-screen grid md:grid-cols-2 gap-2 sm:w-[80%] mx-auto py-20">
+      <Cards />
+      <Cards />
     </div>
   );
 };
@@ -40,7 +41,7 @@ const Cards = () => {
     <>
       {/* main Card   font goes here!!!!*/}
       <div
-        className="relative flex h-full flex-col items-start  w-[88%] mx-auto
+        className="relative flex h-fit justify-self-center  flex-col items-start  w-[90%] mx-auto
             justify-end overflow-hidden rounded-xl  border border-gray-800
              bg-gradient-to-br from-slate-800 via-slate-900
              to-gray-900  
@@ -81,20 +82,20 @@ const Cards = () => {
             {projects[0].title}
           </h1>
           <p className=" text-normal text-justify px-4 text-slate-500">
-            {projects[0].description}
+            {/* {projects[0].description} */}
           </p>
           {/* link buttons */}
           <div className="w-full flex justify-center items-center gap-4 my-3 ">
             <FaCode
-              className="text-[3rem] bg-white/60 hover:bg-white  hover:scale-105 active:scale-95 transition-all duration-300
+              className="text-[2.5rem] bg-white/60 hover:bg-white  hover:scale-105 active:scale-95 transition-all duration-300
             ease-in-out cursor-pointer text-gray-800 rounded-full p-2"
             />
             <FaPlayCircle
-              className="text-[3rem] hover:scale-105 active:scale-95 transition-all duration-300
+              className="text-[2.5rem] hover:scale-105 active:scale-95 transition-all duration-300
             ease-in-out cursor-pointer rounded-full text-white/60 hover:text-white"
             />
             <FaGithub
-              className="text-[3rem] hover:scale-105 active:scale-95 transition-all duration-300
+              className="text-[2.5rem] hover:scale-105 active:scale-95 transition-all duration-300
             ease-in-out cursor-pointer rounded-full text-white/60 hover:text-white "
             />
           </div>
