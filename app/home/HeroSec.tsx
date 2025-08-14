@@ -6,6 +6,7 @@ import { SiGmail } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FaCode } from "react-icons/fa6";
+import { GoMail } from "react-icons/go";
 
 const Hero = () => {
   return (
@@ -52,11 +53,12 @@ const Hero = () => {
         <button
           className="border  text-sm cursor-none font-medium relative bg-gradient-to-r
         from-pr1 via-pr2 to-sec1 transition-all duration-200
-        ease-in-out active:scale-95 hover:scale-110
+        ease-in-out active:scale-95 hover:scale-110 flex items-center justify-center gap-2
         border-neutral-200 dark:border-white/[0.2] 
         text-white px-4 py-[12px] md:py-3 rounded-full"
         >
-          <span className="">Contact Me</span>
+          <GoMail className="text-xl font-bold" />
+          Contact Me
           {/**top color a bit  */}
           {/* <span
           className="absolute inset-x-0 w-[70%] mx-auto
@@ -67,11 +69,11 @@ const Hero = () => {
         {/* Lit up button */}
 
         <button
-          className="px-4 z-[0] py-2 font-medium cursor-none bg-white border-2 border-pr2  rounded-full 
-            transition-all duration-300 ease-in-out text-pr1 hover:text-white dark:bg-black-100
+          className="hover:border-none z-[0] font-medium cursor-none bg-white border border-white px-4 py-[12px] md:py-3 rounded-full 
+            transition-all duration-300 ease-in-out text-white hover:text-white dark:bg-black-100
              hover:bg-gradient-to-r active:scale-95 flex justify-center items-center gap-2  hover:scale-110"
         >
-          Explore <BiSolidSend className="scale-125 mt-1" />
+          Explore <BiSolidSend className="text-2xl " />
         </button>
       </div>
 
