@@ -15,7 +15,7 @@ const page = () => {
   return (
     <div className="h-[100vh] w-[100vw] ">
       <BackgroundBeamsWithCollision>
-        <div className=" w-[100vw] h-full overflow-y-scroll  overflow-x-hidden">
+        <div className=" w-[100vw] h-full overflow-y-scroll overflow-x-hidden">
           <GridBackground />
           <NavbarTop />
           <Homepage />

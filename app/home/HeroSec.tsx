@@ -1,5 +1,7 @@
+"use client";
 import { BiSolidSend } from "react-icons/bi";
 import { ContainerTextFlip } from "@/components/ui/text-flip";
+import { motion } from "motion/react";
 
 //icons emnei
 import { SiGmail } from "react-icons/si";
@@ -7,11 +9,15 @@ import { FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FaCode } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
+import { redirect } from "next/navigation";
 
 const Hero = () => {
   return (
-    <div className="min-h-[100vh] dark:bg-black-100 w-full flex flex-col  justify-center items-center  ">
-      <h2
+    <div className="min-h-[100vh]  w-full flex flex-col  justify-center items-center  ">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: [30, -50, 30, 0] }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         className="text-5xl relative z-20  lg:text-6xl 
         
       font-bold text-center text-white  
@@ -21,14 +27,14 @@ const Hero = () => {
           Hi there <span className="text-pr1">!</span> It{`'`}s
         </p>
         {/* gradient text */}
-        <div
+        <h2
           className="relative bg-clip-text text-transparent bg-no-repeat
           bg-gradient-to-r dark:from-pr1 dark:via-pr2 dark:to-sec1 from-sec1 via-sec2
           to-pr2 py-2"
         >
           TONMOY
-        </div>
-      </h2>
+        </h2>
+      </motion.div>
       <p
         className="text-md text-neutral-200 font-[400] mt-2 max-w-[80%] md:max-w-[43%]
         text-center "
@@ -82,11 +88,12 @@ const Hero = () => {
         {/* Lit up button */}
 
         <button
+          onClick={() => redirect("/about")}
           className="hover:border-none z-[0] font-medium cursor-none bg-white border border-pr1/50 dark:border-white/30 px-4 py-[12px] md:py-3 rounded-full 
-            transition-all duration-300 ease-in-out text-pr1 dark:text-white hover:text-white dark:bg-black-100
-             hover:bg-gradient-to-r active:scale-95 flex justify-center items-center gap-2  hover:scale-110"
+            transition-all duration-300 ease-in-out text-pr1 dark:text-white hover:text-white dark:bg-black-100 dark:hover:bg-gradient-to-r
+             hover:bg-gradient-to-r active:scale-95 flex justify-center items-center gap-2  hover:scale-110 hover:from-pr1 hover:to-sec1"
         >
-          Explore <BiSolidSend className="text-2xl " />
+          Personal Overview <BiSolidSend className="text-2xl " />
         </button>
       </div>
 

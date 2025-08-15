@@ -9,7 +9,8 @@ const About = () => {
     justify-center flex flex-col py-10 md:pt-0 "
     >
       <h1
-        className="text-5xl  w-full md:w-[70vw] text-center md:text-start font-extrabold
+        className="text-5xl  w-full md:w-[70vw] text-center
+        text-white  md:text-start font-extrabold
         "
       >
         About Me
