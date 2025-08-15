@@ -20,11 +20,11 @@ export default function GridBackground() {
         [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]
          dark:bg-black/20"
       ></div> */}
-      <p
+      {/* <p
         className="relative z-20 bg-gradient-to-b
        from-neutral-200 to-neutral-500 bg-clip-text 
        text-2xl font-bold text-transparent sm:text-7xl"
-      ></p>{" "}
+      ></p>{" "} */}
     </div>
   );
 }

@@ -11,26 +11,22 @@ export default function FloatingNavDemo() {
     {
       name: "Home",
       link: "/",
-      icon: <IoIosHome className="h-5 w-5 text-neutral-500 dark:text-white" />,
+      icon: <IoIosHome className="h-5 w-5   text-white" />,
     },
     {
       name: "About",
       link: "/about",
-      icon: <CgProfile className="h-5 w-5 text-neutral-500 dark:text-white" />,
+      icon: <CgProfile className="h-5 w-5  text-white" />,
     },
     {
       name: "Education",
       link: "/edu",
-      icon: (
-        <FaGraduationCap className=" h-5 w-5 text-neutral-500 dark:text-white" />
-      ),
+      icon: <FaGraduationCap className=" h-5 w-5  text-white" />,
     },
     {
       name: "Projects",
       link: "/projects",
-      icon: (
-        <GrAchievement className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
+      icon: <GrAchievement className="h-5 w-5 p-[2px]  text-white" />,
     },
   ];
   return (

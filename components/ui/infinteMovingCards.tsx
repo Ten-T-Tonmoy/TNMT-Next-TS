@@ -76,7 +76,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative max-w-7xl overflow-hidden md:[mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -96,7 +96,7 @@ export const InfiniteMovingCards = ({
             {item.icon}
             <StackIcon
               className={`relative z-20 rounded-[10px]  flex items-center justify-center w-20 p-2
-                    backdrop-blur-md bg-white/10 border border-white/20 text-white
+                    backdrop-blur-md  bg-white/10 border border-white/20 text-white
                    
                     `}
               name={item.tech === undefined ? "null" : item.tech}

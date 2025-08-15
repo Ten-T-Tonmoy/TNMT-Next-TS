@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { TechStacksCards } from "./TechStacksCards";
 
 /**
  * Services and Interests
@@ -56,7 +57,7 @@ const Services = () => {
 
   return (
     <div
-      className="min-h-[100vh] flex flex-col 
+      className="min-h-[100vh] flex flex-col dark:bg-black-100
       justify-center items-center  py-20"
     >
       <h1 className="text-[42px] md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">

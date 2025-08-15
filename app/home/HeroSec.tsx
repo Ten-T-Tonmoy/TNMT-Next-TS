@@ -14,7 +14,7 @@ const Hero = () => {
       <h2
         className="text-5xl relative z-20  lg:text-6xl 
         
-      font-bold text-center text-black dark:text-white  
+      font-bold text-center text-white  
       flex flex-col sm:flex-row justify-center items-center sm:gap-4"
       >
         <p className="px-2">
@@ -23,21 +23,34 @@ const Hero = () => {
         {/* gradient text */}
         <div
           className="relative bg-clip-text text-transparent bg-no-repeat
-          bg-gradient-to-r from-pr1 via-pr2 to-sec1 py-2"
+          bg-gradient-to-r dark:from-pr1 dark:via-pr2 dark:to-sec1 from-sec1 via-sec2
+          to-pr2 py-2"
         >
           TONMOY
         </div>
       </h2>
       <p
-        className="text-lg text-neutral-200 font-[400] mt-2 max-w-[80%] md:max-w-[40%]
+        className="text-md text-neutral-200 font-[400] mt-2 max-w-[80%] md:max-w-[43%]
         text-center "
       >
         {" I'm "}a sophomore IT undergrad and a{" "}
-        <span className="text-pr2">Backend Developer</span> based in Bangladesh,
-        with a knack for turning bold ideas into real products and{" "}
-        <span className="text-pr2">System Design</span> . Fluent in{" "}
-        <span className="text-pr2">PERN & MERN</span> stacks, and also diving
-        into the <span className="text-pr2">.NET Framework</span>.
+        <span className="dark:text-pr2 text-sec1 font-semibold">
+          Backend Developer
+        </span>{" "}
+        based in Bangladesh, with a knack for turning bold ideas into real
+        products and{" "}
+        <span className="dark:text-pr2 text-sec1 font-semibold">
+          System Design
+        </span>{" "}
+        . Fluent in{" "}
+        <span className="dark:text-pr2 text-sec1 font-semibold">
+          PERN & MERN
+        </span>{" "}
+        stacks, and also diving into the{" "}
+        <span className="dark:text-pr2 text-slate-50 font-semibold">
+          .NET Framework
+        </span>
+        .
       </p>
       <ContainerTextFlip
         words={[
@@ -69,8 +82,8 @@ const Hero = () => {
         {/* Lit up button */}
 
         <button
-          className="hover:border-none z-[0] font-medium cursor-none bg-white border border-white px-4 py-[12px] md:py-3 rounded-full 
-            transition-all duration-300 ease-in-out text-white hover:text-white dark:bg-black-100
+          className="hover:border-none z-[0] font-medium cursor-none bg-white border border-pr1/50 dark:border-white/30 px-4 py-[12px] md:py-3 rounded-full 
+            transition-all duration-300 ease-in-out text-pr1 dark:text-white hover:text-white dark:bg-black-100
              hover:bg-gradient-to-r active:scale-95 flex justify-center items-center gap-2  hover:scale-110"
         >
           Explore <BiSolidSend className="text-2xl " />
@@ -78,7 +91,10 @@ const Hero = () => {
       </div>
 
       {/*------------------ social icons -------------------- */}
-      <div className="flex w-full justify-center gap-4 md:gap-6 items-center px-4 pt-4">
+      <div
+        className="flex w-full justify-center gap-4 md:gap-6
+      text-white items-center px-4 pt-4"
+      >
         <a
           href="https://www.github.com/Ten-T-Tonmoy"
           target="_blank"
@@ -86,7 +102,7 @@ const Hero = () => {
         >
           <FiGithub
             className="text-4xl  p-1 hover:bg-gray-200/30 hover:scale-105 
-          transition-all duration-200 ease-in-out  hover:text-stone-950"
+          transition-all duration-200 ease-in-out   hover:text-stone-950"
           />
         </a>
         <a target="_blank" rel="noopener noreferrer">

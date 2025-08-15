@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       className="min-h-[100vh] flex pb-20 sm:pb-0 md:py-10 flex-col md:flex-row 
-    bg-neutral-950 justify-center items-center  gap-14"
+    dark:bg-black-100 justify-center items-center  gap-14"
     >
       <CodeBlock />
       <Myself />

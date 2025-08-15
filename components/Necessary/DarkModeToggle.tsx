@@ -16,9 +16,13 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="px-2 py-2 text-2xl rounded-full bg-white/80 text-orange-600
-      dark:text-gray-200 
-       dark:bg-gray-800 transition-colors"
+      className={`px-2 py-2 text-2xl rounded-full 
+        transition-all duration-200 ease-in-out hover:scale-110
+      ${
+        theme === "dark"
+          ? "text-gray-200 bg-gray-800"
+          : "text-white border border-white/20"
+      }`}
     >
       {theme === "dark" ? <MdDarkMode /> : <FaSun />}
     </button>
