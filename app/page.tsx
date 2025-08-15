@@ -10,6 +10,7 @@ import NavbarTop from "./Misc/Navbar";
 import Services from "./techstacks/Services";
 import Outro from "./outro/Outro";
 import { TechStacksCards } from "./techstacks/TechStacksCards";
+import IntroWrapper from "./introAnimated/Intro";
 
 const page = () => {
   return (
@@ -18,7 +19,9 @@ const page = () => {
         <div className=" w-[100vw] h-full overflow-y-scroll overflow-x-hidden">
           <GridBackground />
           <NavbarTop />
-          <Homepage />
+          <IntroWrapper>
+            <Homepage />
+          </IntroWrapper>
           <About />
           <Services />
           <TechStacksCards />

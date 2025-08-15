@@ -12,6 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
+import { IoMdArrowRoundBack } from "react-icons/io";
 // import { BackgroundGradient } from "@/components/ui/bgGradient";
 import { BackgroundBeams } from "@/components/ui/BeamsBg";
 
@@ -39,6 +40,12 @@ export function MeteorsCard() {
          p-6 py-8 md:py-10  text-sm hidden-scrollbar bg-black-100
            z-10 shadow-xl"
       >
+        <IoMdArrowRoundBack
+          onClick={() => redirect("/")}
+          className="text-white text-[2.5rem] absolute top-3 left-3 hover:scale-110
+          transition-all ease-linear duration-200
+        rounded-full border-white/20 border p-2 hover:bg-white/20 z-50"
+        />
         <BackgroundBeams />
         {/* top photo section  flex-row set at md if u wanna rollback*/}
         <div className="w-full z-10 relative flex flex-col justify-center items-center ">

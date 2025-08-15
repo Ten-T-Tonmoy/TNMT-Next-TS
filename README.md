@@ -1,8 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TNMT Portfolio V2 (NEXT.js)
 
-## Getting Started
+![Portfolio Screenshot](./public/projects/portfolio.png)
 
-First, run the development server:
+A modern, interactive portfolio website built with Next.js 15, featuring stunning animations and a sleek dark/light theme toggle. Showcasing projects, skills, and professional experience with smooth transitions and engaging UI components.
+
+## ✨ Features
+
+- **Modern Design**: Clean, professional layout with dark/light theme support
+- **Smooth Animations**: Powered by Framer Motion for engaging user interactions
+- **Responsive**: Fully responsive design that works on all devices
+- **Interactive Components**: Dynamic typewriter effects, animated cards, and hover interactions
+- **Tech Stack Icons**: Beautiful tech stack representations with animated icons
+- **Fast Performance**: Built with Next.js 15 and Turbopack for optimal loading speeds
+- **Accessibility**: Semantic HTML and keyboard navigation support
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 (with Turbopack)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React, React Icons, Tabler Icons, Tech Stack Icons
+- **UI Components**: Aceternity UI components
+- **Theme**: Next Themes for dark/light mode
+- **Code Highlighting**: React Syntax Highlighter
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd portfolio-nextjs
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +59,86 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                    # App router pages
+│   ├── about/             # About page
+│   ├── blogs/             # Blog section
+│   ├── edu/               # Education page
+│   ├── home/              # Home page components
+│   ├── introAnimated/     # Animated intro section
+│   ├── Misc/              # Miscellaneous components
+│   ├── notfound/          # 404 page
+│   ├── outro/             # Outro/contact section
+│   ├── projects/          # Projects showcase
+│   └── techstacks/        # Tech stack display
+├── components/            # Reusable components
+│   └── Necessary/         # Essential UI components
+├── globals.css            # Global styles
+├── layout.tsx             # Root layout
+├── page.tsx               # Home page
+└── provider.tsx           # Theme and context providers
+```
 
-## Learn More
+## 🎨 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero Section**: Animated introduction with typewriter effect
+- **About**: Personal information and professional background
+- **Education**: Academic achievements and certifications
+- **Projects**: Interactive project cards with live demos
+- **Tech Stack**: Animated technology icons and skill levels
+- **Contact**: Professional contact form and social links
+- **Blog**: Technical articles and insights
+- **Dark Mode Toggle**: Smooth theme switching
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build production bundle
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint for code quality
 
-## Deploy on Vercel
+## 🎯 Performance Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Turbopack**: Next.js 15's ultra-fast bundler for development
+- **React 19**: Latest React features for optimal performance
+- **Code Splitting**: Automatic code splitting for faster page loads
+- **Image Optimization**: Next.js built-in image optimization
+- **CSS Optimization**: Tailwind CSS purging for minimal bundle size
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌟 Customization
+
+The portfolio is designed to be easily customizable:
+
+1. **Colors**: Modify the color scheme in `tailwind.config.js`
+2. **Content**: Update personal information in respective component files
+3. **Animations**: Adjust Framer Motion configurations for different effects
+4. **Layout**: Modify component structure in the `app/` directory
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+This is a personal portfolio project and is not currently accepting public contributions.
+
+## 📄 License
+
+This project is private and not available for public use or distribution.
+
+## 📧 Contact
+
+For any inquiries about this portfolio, please reach out through the contact form on the website.
+
+---
+
+Concept , Themed & programmed by FH Tonmoy ✨
