@@ -37,8 +37,8 @@ const ContactForm = () => {
             className="border my-3 text-sm cursor-none font-medium relative bg-gradient-to-r
                     from-pr1 via-pr2 to-sec1 transition-all duration-200
                     ease-in-out active:scale-95 hover:scale-105 
-                    border-neutral-200 dark:border-white/[0.2] text-black
-                    dark:text-white px-4 py-[12px] md:py-3 rounded-[10px]"
+                    border-neutral-200 border-white/[0.2]
+                    text-white px-4 py-[12px] md:py-3 rounded-[10px]"
           >
             Send Message
             <BiSolidSend className="scale-125 inline ml-2 mb-[2px]" />

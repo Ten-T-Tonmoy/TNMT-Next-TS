@@ -18,7 +18,7 @@ const Outro = () => {
     <>
       <div
         className="min-h-[100vh] flex flex-col md:flex-row  gap-8
-      bg-neutral-950 justify-center items-center md:items-start py-28 "
+      dark:bg-black-100 justify-center items-center md:items-start py-28 "
       >
         <div
           className="flex gap-8 md:flex-col-reverse h-full flex-col
@@ -39,8 +39,9 @@ export default Outro;
 export const Footer = () => {
   return (
     <div
-      className="min-h-[25vh] md:min-h-[12vh]  md:flex-row-reverse  pb-6  flex items-center md:items-start flex-col
-    gap-2 justify-start md:justify-center bg-gradient-to-r from-pr1  to-sec2 "
+      className="min-h-[25vh] md:min-h-[12vh]  md:flex-row-reverse  pb-6  flex items-center
+       md:items-start flex-col dark:from-pr1 dark:to-sec2
+    gap-2 justify-start md:justify-center bg-gradient-to-r from-black-100 to-neutral-950 "
     >
       <h1 className="text-center text-white font-semibold">
         <br />

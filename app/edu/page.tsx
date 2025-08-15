@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
+import Education from "./Education";
 
 export default function AboutPage() {
-  redirect("/notfound");
+  // redirect("/notfound");
+  return <Education />;
 }

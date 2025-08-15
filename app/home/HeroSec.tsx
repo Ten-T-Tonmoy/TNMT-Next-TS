@@ -67,7 +67,7 @@ const Hero = () => {
           className="border  text-sm cursor-none font-medium relative bg-gradient-to-r
         from-pr1 via-pr2 to-sec1 transition-all duration-200
         ease-in-out active:scale-95 hover:scale-110 flex items-center justify-center gap-2
-        border-neutral-200 dark:border-white/[0.2] 
+        border-neutral-200 border-white/[0.2] 
         text-white px-4 py-[12px] md:py-3 rounded-full"
         >
           <GoMail className="text-xl font-bold" />

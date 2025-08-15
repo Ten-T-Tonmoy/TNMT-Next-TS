@@ -24,10 +24,10 @@ const CodeBlock = () => {
 
   return (
     <>
-      <div className="h-[100vh]  flex flex-col items-center mt-20 md:mt-8 gap-8 justify-center p-2 w-[92vw] md:max-w-[45vw]">
-        <h1 className="text-6xl w-full text-center  font-extrabold  md:mt-4">
-          About Me
-        </h1>
+      <div
+        className="h-full justify-self-center  flex flex-col items-center mt-10 md:mt-8 gap-8 text-white
+        p-2 w-[88vw] md:max-w-[38vw]"
+      >
         <div className="md:w-[90%]">
           {/* header */}
           <div className="bg-gray-800 relative rounded-t-lg p-3 flex items-center space-x-2">

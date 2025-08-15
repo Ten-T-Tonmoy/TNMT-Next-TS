@@ -1,16 +1,23 @@
 "use client";
 import React from "react";
 import CodeBlock from "./CodeCard";
-import { MeteorsCard } from "./MeteorCard";
 
 const About = () => {
   return (
     <div
-      className="min-h-[100vh] flex pb-20 sm:pb-0 md:py-10 flex-col md:flex-row 
-    dark:bg-black-100 justify-center items-center  gap-14"
+      className=" w-full items-center 
+    justify-center flex flex-col py-10 md:pt-0 "
     >
-      <CodeBlock />
-      <Myself />
+      <h1
+        className="text-5xl  w-full md:w-[70vw] text-center md:text-start font-extrabold
+        "
+      >
+        About Me
+      </h1>
+      <div className="flex flex-col md:flex-row items-center justify-center w-full">
+        <CodeBlock />
+        <CodeBlock />
+      </div>
     </div>
   );
 };
@@ -18,15 +25,3 @@ const About = () => {
 export default About;
 
 //dayum sometime min-h more important
-
-const Myself = () => {
-  //typewriter + meteor Effect/ lampsec
-  return (
-    <div
-      className=" flex items-center justify-center
-    p-2 w-[92vw] md:w-[45vw]"
-    >
-      <MeteorsCard />
-    </div>
-  );
-};

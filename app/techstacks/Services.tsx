@@ -60,7 +60,10 @@ const Services = () => {
       className="min-h-[100vh] flex flex-col dark:bg-black-100
       justify-center items-center  py-20"
     >
-      <h1 className="text-[42px] md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">
+      <h1
+        className="text-[42px] md:text-6xl md:w-[74vw] text-center 
+      text-white md:text-start  font-extrabold  mb-10"
+      >
         Services & Interests
       </h1>{" "}
       {/* container starts here for cards */}
@@ -79,8 +82,8 @@ const Services = () => {
           px-5 py-8 flex-col justify-center h-full  z-10
              ${
                [1, 2, 5].includes(idx)
-                 ? "rounded-r-2xl border-l-0 shadow-[-.2px_0_10px_rgba(0,0,0,0.1)] "
-                 : "rounded-l-2xl border-r-0 shadow-[.2px_0_10px_rgba(0,0,0,0.1)]"
+                 ? "rounded-r-2xl border-l-0 shadow-[-.2px_0_10px_rgba(0,0,0,0.1)] dark:shadow-[-.2px_0_10px_rgba(250,250,250,0.1)] "
+                 : "rounded-l-2xl border-r-0 shadow-[.2px_0_10px_rgba(0,0,0,0.1)] dark:shadow-[.2px_0_10px_rgba(250,250,250,0.1)]"
              }`}
             >
               <h1 className="text-xl font-black">{service.title}</h1>

@@ -16,8 +16,10 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className={`px-2 py-2 text-2xl rounded-full 
-        transition-all duration-200 ease-in-out hover:scale-110
+      className={`px-2 py-2 text-2xl rounded-full scale-110
+        transition-all duration-200 ease-in-out hover:scale-125
+      dark:border-white/[0.2] 
+        backdrop-blur-md bg-white/10 border border-white/20   
       ${
         theme === "dark"
           ? "text-gray-200 bg-gray-800"

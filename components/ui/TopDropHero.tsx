@@ -111,7 +111,7 @@ export const BackgroundBeamsWithCollision = ({
         `h-full dark:bg-black-100  relative flex items-center 
          w-full justify-center overflow-hidden  `,
         `bg-gradient-to-b from-pr1 to-sec2`, // light mode
-        `dark:from-black-100 dark:to-black`,
+        `dark:from-black-100 dark:to-black-100`,
         className
       )}
     >

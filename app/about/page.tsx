@@ -1,5 +1,6 @@
-import { redirect } from "next/navigation";
-
-export default function AboutPage() {
-  redirect("/notfound");
-}
+import { MeteorsCard } from "./MeteorCard";
+const Myself = () => {
+  //typewriter + meteor Effect/ lampsec
+  return <MeteorsCard />;
+};
+export default Myself;

@@ -74,7 +74,10 @@ export function TechStacksCards() {
       className=" rounded-md  flex flex-col antialiased py-20  z-0
     items-center justify-center relative overflow-hidden"
     >
-      <h1 className="text-[42px] md:text-6xl md:w-[74vw] text-center md:text-start  font-extrabold  mb-10">
+      <h1
+        className="text-[42px] md:text-6xl md:w-[74vw] 
+      text-white text-center md:text-start  font-extrabold  mb-10"
+      >
         FrameWorks & Tools
       </h1>
       <InfiniteMovingCards
