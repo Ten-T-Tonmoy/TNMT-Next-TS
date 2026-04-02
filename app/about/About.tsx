@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import CodeBlock from "./CodeCard";
+import gif from "../../public/photos/back-end-developer.png";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -15,9 +17,19 @@ const About = () => {
       >
         About Me
       </h1>
-      <div className="flex flex-col md:flex-row items-center justify-center w-full">
+      <div
+        className="flex flex-col md:flex-row items-center
+       justify-center w-full"
+      >
         <CodeBlock />
-        <CodeBlock />
+        {/* <CodeBlock /> */}
+        <div
+          className="h-full justify-self-center  flex flex-col items-center
+           mt-10 md:mt-8 gap-8
+        p-2 w-[88vw] md:max-w-[38vw]"
+        >
+          <Image src={gif} alt={""} />
+        </div>
       </div>
     </div>
   );

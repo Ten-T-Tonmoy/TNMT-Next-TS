@@ -34,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-4 px-4 md:px-8 lg:px-10">
         <h1
-          className="text-3xl md:text-5xl text-center md:text-start 
+          className="text-3xl md:text-5xl ml-[4vw] text-start 
         font-extrabold text-white mb-4"
         >
           My Academic Journey So Far...
@@ -48,7 +48,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             key={index}
             className="flex justify-start pt-5 md:pt-10 md:gap-5"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
+            <div
+              className="sticky flex flex-col md:flex-row z-40
+             items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full"
+            >
               <div
                 className="h-6 w-6 absolute left-3 md:left-3  rounded-full
                bg-white/20 border-2 border-pr1 flex items-center justify-center"

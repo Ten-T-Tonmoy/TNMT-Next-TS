@@ -27,7 +27,7 @@ export const FloatingNav = ({
       className={cn(
         "flex w-[92%] gap-2 md:gap-8 md:w-[90%] fixed top-2 inset-x-0 mx-auto z-[40]  items-center justify-between ",
 
-        className
+        className,
       )}
     >
       <Image
@@ -40,10 +40,10 @@ export const FloatingNav = ({
       {/* main nav items  */}
       <div
         className={cn(
-          "flex items-center gap-2 px-4 md:gap-4  py-2",
+          "flex items-center gap-2 px-4 md:gap-4 left-[50vw] py-2",
           "border border-transparent dark:border-white/[0.2] rounded-full",
           "backdrop-blur-md bg-white/10 border border-white/20   ",
-          className
+          className,
         )}
       >
         {navItems.map((navItem, idx) => (
@@ -52,7 +52,7 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn(
               "relative flex items-center md:px-2 hover:bg-white/40 p-2 rounded-full   space-x-1 text-neutral-50 dark:text-neutral-50",
-              "hover:text-neutral-500 hover:scale-150 md:hover:scale-125 transition-all duration-200 ease-in-out dark:hover:text-neutral-300"
+              "hover:text-neutral-500 hover:scale-150 md:hover:scale-125 transition-all duration-200 ease-in-out dark:hover:text-neutral-300",
             )}
           >
             <span className="block scale-125 text-white">{navItem.icon}</span>

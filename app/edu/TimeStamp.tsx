@@ -18,6 +18,11 @@ export function TimeStamp() {
          to-gray-900 shadow-2xl border-2 w-full border-transparent bg-clip-padding
           relative p-6 mx-auto md:w-[35vw] font-semibold rounded-xl flex flex-col justify-center gap-2"
         >
+          <FaGraduationCap
+            className="text-[100px] absolute -rotate-12 bottom-2
+          right-2  md:text-[150]  text-blue-400/20"
+          />
+
           <span
             className="absolute inset-x-0 w-full mx-auto top-0
            bg-gradient-to-r from-transparent via-pr1 to-transparent h-[2px]"
@@ -73,6 +78,10 @@ export function TimeStamp() {
          relative p-6 mx-auto md:w-[35vw] font-semibold rounded-xl flex
           flex-col justify-center gap-4"
         >
+          <FaGraduationCap
+            className="text-[100px] absolute -rotate-12 bottom-2
+          right-2  md:text-[150]  text-blue-400/20"
+          />
           <span
             className="absolute inset-x-0 w-full mx-auto top-0 
           bg-gradient-to-r from-transparent via-pr1 to-transparent h-[2px]"
@@ -130,6 +139,10 @@ export function TimeStamp() {
         shadow-2xl border-2 w-full border-transparent bg-clip-padding p-6 relative mx-auto
          md:w-[35vw] font-semibold rounded-xl flex flex-col justify-center gap-4"
         >
+          <FaGraduationCap
+            className="text-[100px] absolute -rotate-12 bottom-2
+          right-2  md:text-[150]  text-blue-400/20"
+          />
           <span
             className="absolute inset-x-0 w-full mx-auto top-0 bg-gradient-to-r 
           from-transparent via-pr1 to-transparent h-[2px]"
