@@ -2,10 +2,10 @@ const CodeBlock = () => {
   const programmer = {
     name: "Farhan Hassan Tonmoy",
     email: "turing01754@gmail.com",
-    role: "FullStack DEV",
+    role: "Backend focused FullStack DEV",
     occupation: "Undergrad Student",
     institute: "University of Rajshahi",
-    location: "Demra,Dhaka",
+    location: "Demra,Dhaka || Rajshahi",
     github: "Ten-T-Tonmoy",
     languages: ["javascript", "typescript", "C++", "C#", "java"],
     tools: [
@@ -19,6 +19,8 @@ const CodeBlock = () => {
       "NodeJs",
       "Express",
       "PostgreSQL",
+      "Docker",
+      "Redis",
     ],
   };
 

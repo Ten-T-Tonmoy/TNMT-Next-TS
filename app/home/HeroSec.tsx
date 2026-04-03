@@ -40,14 +40,14 @@ const Hero = () => {
           className="text-md text-neutral-200 font-[400] mt-2 max-w-[80%] md:max-w-[43%]
         text-center "
         >
-          {" I'm "}a sophomore IT undergrad and a{" "}
+          {" I'm "}a Third year IT undergrad and a{" "}
           <span className="dark:text-pr2 text-sec1 font-semibold">
             Backend Developer
           </span>{" "}
-          based in Bangladesh, with a knack for turning bold ideas into real
-          products and{" "}
+          based in Bangladesh,passionate about building scalable applications
+          and designing efficient systems{" "}
           <span className="dark:text-pr2 text-sec1 font-semibold">
-            System Design
+            designing efficient systems
           </span>{" "}
           . Fluent in{" "}
           <span className="dark:text-pr2 text-sec1 font-semibold">
@@ -61,10 +61,11 @@ const Hero = () => {
         </p>
         <ContainerTextFlip
           words={[
-            "FullStack Web Developer",
-            "Typescript All The Way",
+            "Backend-Focused Developer",
+            "Full-Stack Web Developer",
             "System Design Enthusiast",
-            "Sophomere IT Undergrad",
+            "TypeScript Developer",
+            ".NET Learner",
           ]}
         />
 

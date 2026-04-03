@@ -29,9 +29,9 @@ const Services = () => {
       image: "/services/fullstack4.png",
     },
     {
-      title: "Landing Page Design",
-      desc: "Creating high-converting, serveral section including landing pages for products or portfolios.",
-      image: "/services/web-design3.png",
+      title: "Scalable and Efficient Backend systems",
+      desc: "Building Backend services for scale and speed using Redis for caching, Docker for consistent deployment and eddicient coding practices .",
+      image: "/services/website.png",
     },
     {
       title: "Ecommerce Backend",
@@ -41,7 +41,7 @@ const Services = () => {
     {
       title: "Design to Code",
       desc: "Translating Figma designs into responsive, production-ready React/NextJs apps.",
-      image: "/services/website.png",
+      image: "/services/web-design3.png",
     },
     {
       title: "Problem Solving",
