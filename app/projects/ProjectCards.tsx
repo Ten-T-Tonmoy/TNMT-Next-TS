@@ -14,7 +14,7 @@ const ProjectCards = () => {
         Featured Projects
       </h1>
       <div
-        className="min-h-screen grid md:grid-cols-2 gap-4 
+        className="min-h-screen grid md:grid-cols-2 gap-6 
     sm:w-[80%] mx-auto pb-20"
       >
         <Cards />

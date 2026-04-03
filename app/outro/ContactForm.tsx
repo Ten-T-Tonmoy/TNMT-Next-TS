@@ -9,14 +9,19 @@ const ContactForm = () => {
   const [message, setmessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FocusEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (name.trim() === "" && email.trim() === "" && message.trim() === "") {
-      toast.error("The form is empty");
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      toast.error("Please fill all fields");
       return;
     }
     setLoading(true);
-    const res = await fetch(process.env.NEXT_PUBLIC_SHEETDB_URL, {
+    const url = process.env.NEXT_PUBLIC_SHEETDB_URL;
+    if (!url) {
+      toast.error("SheetDB URL not configured");
+      return;
+    }
+    const res = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,8 +38,7 @@ const ContactForm = () => {
       }),
     });
 
-    console.log(res);
-    if (res) {
+    if (res.ok) {
       setLoading(false);
       toast.success("Thanks for your Opinion!");
       setName("");
@@ -80,7 +84,7 @@ const ContactForm = () => {
         />
         <div className="w-full items-end justify-end flex">
           <button
-            onClick={handleSubmit}
+            type="submit"
             className={`border my-3 text-sm cursor-none font-medium relative bg-gradient-to-r
                     from-pr1 via-pr2 to-sec1 transition-all duration-200
                     ease-in-out active:scale-95 hover:scale-105 

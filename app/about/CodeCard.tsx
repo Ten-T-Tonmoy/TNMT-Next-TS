@@ -33,7 +33,7 @@ const CodeBlock = () => {
       >
         <div className="md:w-[90%] ">
           {/* header */}
-          <div className="bg-gray-800 relative rounded-t-lg p-3 flex items-center space-x-2">
+          <div className="bg-gray-800 relative rounded-t-xl p-3 flex items-center space-x-2">
             <div className="w-3 h-3 bg-red-500 rounded-full"></div>
             <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -50,9 +50,8 @@ const CodeBlock = () => {
             />
           </div>
           <div
-            className="bg-gradient-to-br from-slate-800 via-slate-900
-         to-gray-900 rounded-b-lg p-6 font-mono text-sm shadow-2xl border-2 
-         border-transparent bg-clip-padding relative "
+            className=" bg-black border-white/20 rounded-b-2xl p-6 font-mono text-sm shadow-2xl border-2 
+           bg-clip-padding relative "
           >
             {/**top color a bit  */}
             <span
@@ -63,12 +62,12 @@ const CodeBlock = () => {
             {/* code mimic */}
 
             <div
-              className="absolute inset-0 rounded-b-lg bg-gradient-to-r
+              className="absolute inset-0  bg-gradient-to-r
            from-blue-500 via-purple-500 to-pink-500 opacity-50 -z-10"
             ></div>
             <div
               className="absolute inset-0.5 rounded-b-lg bg-gradient-to-br 
-          from-slate-800 via-slate-900 to-gray-900"
+          from-slate-800 dark:hidden  via-slate-900 to-gray-900"
             ></div>
             <div className="relative z-10">
               <div className="text-pink-400">
